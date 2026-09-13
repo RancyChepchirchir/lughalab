@@ -1,0 +1,125 @@
+{
+  "experiment": "LughaLab Swahili ASR Benchmark v1",
+  "dataset_size": 5,
+  "model": "openai/whisper-small",
+  "global_summary": {
+    "mean_wer": 0.840476,
+    "mean_cer": 0.165144,
+    "total_audio_seconds": 20.836,
+    "total_inference_seconds": 5.939658,
+    "realtime_factor": 0.285067,
+    "benchmark_wall_time_seconds": 54.093834
+  },
+  "category_summary": {
+    "code_switching": {
+      "count": 1,
+      "mean_wer": 1.0,
+      "mean_cer": 0.25641,
+      "mean_latency_ms": 450.451,
+      "mean_duration_seconds": 3.433,
+      "realtime_factor": 0.131212
+    },
+    "informal": {
+      "count": 1,
+      "mean_wer": 1.166667,
+      "mean_cer": 0.25,
+      "mean_latency_ms": 469.059,
+      "mean_duration_seconds": 2.793,
+      "realtime_factor": 0.167941
+    },
+    "numbers": {
+      "count": 1,
+      "mean_wer": 0.25,
+      "mean_cer": 0.023256,
+      "mean_latency_ms": 460.369,
+      "mean_duration_seconds": 4.479,
+      "realtime_factor": 0.102784
+    },
+    "standard": {
+      "count": 2,
+      "mean_wer": 0.892857,
+      "mean_cer": 0.148026,
+      "mean_latency_ms": 2279.8895,
+      "mean_duration_seconds": 5.0655,
+      "realtime_factor": 0.450082
+    }
+  },
+  "records": [
+    {
+      "id": "standard_01",
+      "category": "standard",
+      "audio": "data/speech/audio/standard_01.m4a",
+      "reference_raw": "Ninafurahia kujifunza akili bandia na teknolojia ya lugha.",
+      "hypothesis_raw": "Ninofura hiya kujifunza akili bandia na teknologia ya luga",
+      "reference_normalised": "ninafurahia kujifunza akili bandia na teknolojia ya lugha",
+      "hypothesis_normalised": "ninofura hiya kujifunza akili bandia na teknologia ya luga",
+      "wer": 0.5,
+      "cer": 0.087719,
+      "duration_seconds": 5.119,
+      "inference_time_ms": 4026.1,
+      "model": "openai/whisper-small",
+      "device": "mps"
+    },
+    {
+      "id": "standard_02",
+      "category": "standard",
+      "audio": "data/speech/audio/standard_02.m4a",
+      "reference_raw": "Wanafunzi wanasoma vitabu katika maktaba ya chuo.",
+      "hypothesis_raw": "wana funze wa na sama vitabo katika makta bayachua",
+      "reference_normalised": "wanafunzi wanasoma vitabu katika maktaba ya chuo",
+      "hypothesis_normalised": "wana funze wa na sama vitabo katika makta bayachua",
+      "wer": 1.285714,
+      "cer": 0.208333,
+      "duration_seconds": 5.012,
+      "inference_time_ms": 533.679,
+      "model": "openai/whisper-small",
+      "device": "mps"
+    },
+    {
+      "id": "informal_01",
+      "category": "informal",
+      "audio": "data/speech/audio/informal_01.m4a",
+      "reference_raw": "Niko poa leo lakini nimechoka kidogo.",
+      "hypothesis_raw": "Kupo aleo lakini ni mechuka kido go",
+      "reference_normalised": "niko poa leo lakini nimechoka kidogo",
+      "hypothesis_normalised": "kupo aleo lakini ni mechuka kido go",
+      "wer": 1.166667,
+      "cer": 0.25,
+      "duration_seconds": 2.793,
+      "inference_time_ms": 469.059,
+      "model": "openai/whisper-small",
+      "device": "mps"
+    },
+    {
+      "id": "codeswitch_01",
+      "category": "code_switching",
+      "audio": "data/speech/audio/codeswitch_01.m4a",
+      "reference_raw": "Niko meeting lakini nitakupigia baadaye.",
+      "hypothesis_raw": "Komiting, lakini entaku pigia badae.",
+      "reference_normalised": "niko meeting lakini nitakupigia baadaye",
+      "hypothesis_normalised": "komiting lakini entaku pigia badae",
+      "wer": 1.0,
+      "cer": 0.25641,
+      "duration_seconds": 3.433,
+      "inference_time_ms": 450.451,
+      "model": "openai/whisper-small",
+      "device": "mps"
+    },
+    {
+      "id": "numbers_01",
+      "category": "numbers",
+      "audio": "data/speech/audio/numbers_01.m4a",
+      "reference_raw": "Nina vitabu ishirini na tatu na kalamu tano.",
+      "hypothesis_raw": "Nina vitabu ishirini na tatu na kalamutano",
+      "reference_normalised": "nina vitabu ishirini na tatu na kalamu tano",
+      "hypothesis_normalised": "nina vitabu ishirini na tatu na kalamutano",
+      "wer": 0.25,
+      "cer": 0.023256,
+      "duration_seconds": 4.479,
+      "inference_time_ms": 460.369,
+      "model": "openai/whisper-small",
+      "device": "mps"
+    }
+  ],
+  "scientific_note": "WER and CER are computed against manually supplied reference transcripts after simple lowercase and punctuation normalisation. This is a small diagnostic benchmark and not a population-level estimate of Swahili ASR performance."
+}

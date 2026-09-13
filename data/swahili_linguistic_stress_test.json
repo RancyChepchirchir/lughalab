@@ -1,0 +1,152 @@
+[
+  {
+    "id": "neg_01",
+    "phenomenon": "negation",
+    "text_a": "Juma anapenda kahawa.",
+    "text_b": "Juma hapendi kahawa.",
+    "change": "affirmative_to_negative",
+    "semantic_effect": "meaning_change",
+    "description": "Negation reverses the proposition while preserving most lexical content."
+  },
+  {
+    "id": "neg_02",
+    "phenomenon": "negation",
+    "text_a": "Amina anaenda shuleni.",
+    "text_b": "Amina haendi shuleni.",
+    "change": "affirmative_to_negative",
+    "semantic_effect": "meaning_change",
+    "description": "Negation is expressed morphologically within the verb."
+  },
+  {
+    "id": "neg_03",
+    "phenomenon": "negation",
+    "text_a": "Watoto wanacheza nje.",
+    "text_b": "Watoto hawachezi nje.",
+    "change": "affirmative_to_negative",
+    "semantic_effect": "meaning_change",
+    "description": "Plural-subject negation changes verbal morphology."
+  },
+
+  {
+    "id": "tense_01",
+    "phenomenon": "tense",
+    "text_a": "Juma anasoma kitabu.",
+    "text_b": "Juma alisoma kitabu.",
+    "change": "present_to_past",
+    "semantic_effect": "temporal_change",
+    "description": "Present tense changes to past tense."
+  },
+  {
+    "id": "tense_02",
+    "phenomenon": "tense",
+    "text_a": "Juma anasoma kitabu.",
+    "text_b": "Juma atasoma kitabu.",
+    "change": "present_to_future",
+    "semantic_effect": "temporal_change",
+    "description": "Present tense changes to future tense."
+  },
+  {
+    "id": "tense_03",
+    "phenomenon": "tense",
+    "text_a": "Mama anapika chakula.",
+    "text_b": "Mama alipika chakula.",
+    "change": "present_to_past",
+    "semantic_effect": "temporal_change",
+    "description": "Temporal information changes inside the verb."
+  },
+
+  {
+    "id": "subject_01",
+    "phenomenon": "subject_agreement",
+    "text_a": "Mtoto anasoma kitabu.",
+    "text_b": "Watoto wanasoma kitabu.",
+    "change": "singular_to_plural",
+    "semantic_effect": "participant_change",
+    "description": "Subject number and verbal agreement change together."
+  },
+  {
+    "id": "subject_02",
+    "phenomenon": "subject_agreement",
+    "text_a": "Mwanafunzi anaandika.",
+    "text_b": "Wanafunzi wanaandika.",
+    "change": "singular_to_plural",
+    "semantic_effect": "participant_change",
+    "description": "Nominal number change is reflected by subject agreement on the verb."
+  },
+
+  {
+    "id": "argument_01",
+    "phenomenon": "argument_structure",
+    "text_a": "Juma anampenda Amina.",
+    "text_b": "Amina anampenda Juma.",
+    "change": "subject_object_swap",
+    "semantic_effect": "meaning_change",
+    "description": "The same lexical items occur but semantic roles are reversed."
+  },
+  {
+    "id": "argument_02",
+    "phenomenon": "argument_structure",
+    "text_a": "Mwalimu anamfundisha mtoto.",
+    "text_b": "Mtoto anamfundisha mwalimu.",
+    "change": "subject_object_swap",
+    "semantic_effect": "meaning_change",
+    "description": "Agent and patient roles are reversed."
+  },
+
+  {
+    "id": "quantity_01",
+    "phenomenon": "quantification",
+    "text_a": "Watoto wote walifika.",
+    "text_b": "Watoto wachache walifika.",
+    "change": "universal_to_partial",
+    "semantic_effect": "meaning_change",
+    "description": "Universal quantification changes to partial quantification."
+  },
+  {
+    "id": "quantity_02",
+    "phenomenon": "quantification",
+    "text_a": "Wanafunzi wote walifaulu.",
+    "text_b": "Baadhi ya wanafunzi walifaulu.",
+    "change": "universal_to_existential",
+    "semantic_effect": "meaning_change",
+    "description": "The number of participants satisfying the proposition changes."
+  },
+
+  {
+    "id": "code_01",
+    "phenomenon": "code_switching",
+    "text_a": "Niko kwenye mkutano sasa.",
+    "text_b": "Niko meeting sasa.",
+    "change": "swahili_to_english_lexical_switch",
+    "semantic_effect": "meaning_preserving",
+    "description": "A Swahili lexical item is replaced with a commonly code-switched English equivalent."
+  },
+  {
+    "id": "code_02",
+    "phenomenon": "code_switching",
+    "text_a": "Nitakupigia simu baadaye.",
+    "text_b": "Nitakucall baadaye.",
+    "change": "swahili_to_english_verb_switch",
+    "semantic_effect": "meaning_preserving",
+    "description": "English lexical material is embedded into a Swahili construction."
+  },
+
+  {
+    "id": "informal_01",
+    "phenomenon": "informal_language",
+    "text_a": "Ninajisikia vizuri leo.",
+    "text_b": "Niko poa leo.",
+    "change": "standard_to_informal",
+    "semantic_effect": "approximately_meaning_preserving",
+    "description": "More standard wording changes to conversational wording."
+  },
+  {
+    "id": "informal_02",
+    "phenomenon": "informal_language",
+    "text_a": "Tutakutana kesho.",
+    "text_b": "Tutaonana kesho basi.",
+    "change": "standard_to_conversational",
+    "semantic_effect": "approximately_meaning_preserving",
+    "description": "Conversational formulation expresses approximately the same intention."
+  }
+]

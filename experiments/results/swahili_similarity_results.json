@@ -1,0 +1,259 @@
+{
+  "experiment": "LughaLab Swahili contextual embedding similarity benchmark",
+  "dataset_size": 12,
+  "total_runtime_seconds": 9.409,
+  "records": [
+    {
+      "id": "para_01",
+      "category": "paraphrase",
+      "expected_relation": "similar",
+      "text_a": "Mtoto anasoma kitabu shuleni.",
+      "text_b": "Mwanafunzi anajifunza kwa kusoma kitabu.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.691344,
+          "inference_time_ms": 4109.838,
+          "embedding_dimension": 768,
+          "device": "mps"
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.967697,
+          "inference_time_ms": 4001.493,
+          "embedding_dimension": 768,
+          "device": "mps"
+        }
+      }
+    },
+    {
+      "id": "para_02",
+      "category": "paraphrase",
+      "expected_relation": "similar",
+      "text_a": "Mama anapika chakula jikoni.",
+      "text_b": "Mama anatayarisha chakula ndani ya jikoni.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.681644,
+          "inference_time_ms": 258.845,
+          "embedding_dimension": 768,
+          "device": "mps"
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.968156,
+          "inference_time_ms": 272.979,
+          "embedding_dimension": 768,
+          "device": "mps"
+        }
+      }
+    },
+    {
+      "id": "topic_01",
+      "category": "topical_similarity",
+      "expected_relation": "related",
+      "text_a": "Daktari anawatibu wagonjwa hospitalini.",
+      "text_b": "Muuguzi anafanya kazi katika hospitali.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.712701,
+          "inference_time_ms": 18.828,
+          "embedding_dimension": 768,
+          "device": "mps"
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.953485,
+          "inference_time_ms": 28.235,
+          "embedding_dimension": 768,
+          "device": "mps"
+        }
+      }
+    },
+    {
+      "id": "topic_02",
+      "category": "topical_similarity",
+      "expected_relation": "related",
+      "text_a": "Wanafunzi wanasoma kwa ajili ya mtihani.",
+      "text_b": "Mwalimu anafundisha darasani.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.576117,
+          "inference_time_ms": 161.675,
+          "embedding_dimension": 768,
+          "device": "mps"
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.775714,
+          "inference_time_ms": 31.198,
+          "embedding_dimension": 768,
+          "device": "mps"
+        }
+      }
+    },
+    {
+      "id": "unrel_01",
+      "category": "unrelated",
+      "expected_relation": "unrelated",
+      "text_a": "Mtoto anasoma kitabu shuleni.",
+      "text_b": "Mvua kubwa ilinyesha jana usiku.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.475419,
+          "inference_time_ms": 17.848,
+          "embedding_dimension": 768,
+          "device": "mps"
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.96596,
+          "inference_time_ms": 20.192,
+          "embedding_dimension": 768,
+          "device": "mps"
+        }
+      }
+    },
+    {
+      "id": "unrel_02",
+      "category": "unrelated",
+      "expected_relation": "unrelated",
+      "text_a": "Samaki wanaogelea baharini.",
+      "text_b": "Kompyuta yangu imeharibika.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.663876,
+          "inference_time_ms": 18.816,
+          "embedding_dimension": 768,
+          "device": "mps"
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.915511,
+          "inference_time_ms": 19.669,
+          "embedding_dimension": 768,
+          "device": "mps"
+        }
+      }
+    },
+    {
+      "id": "contrast_01",
+      "category": "contrast",
+      "expected_relation": "contrast",
+      "text_a": "Juma anapenda kahawa.",
+      "text_b": "Juma hapendi kahawa.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.945844,
+          "inference_time_ms": 171.208,
+          "embedding_dimension": 768,
+          "device": "mps"
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.892837,
+          "inference_time_ms": 22.642,
+          "embedding_dimension": 768,
+          "device": "mps"
+        }
+      }
+    },
+    {
+      "id": "contrast_02",
+      "category": "contrast",
+      "expected_relation": "contrast",
+      "text_a": "Leo hali ya hewa ni nzuri.",
+      "text_b": "Leo hali ya hewa si nzuri.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.956036,
+          "inference_time_ms": 17.526,
+          "embedding_dimension": 768,
+          "device": "mps"
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.995903,
+          "inference_time_ms": 18.765,
+          "embedding_dimension": 768,
+          "device": "mps"
+        }
+      }
+    },
+    {
+      "id": "informal_01",
+      "category": "informal",
+      "expected_relation": "similar",
+      "text_a": "Niko poa leo.",
+      "text_b": "Ninajisikia vizuri leo.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.766008,
+          "inference_time_ms": 19.545,
+          "embedding_dimension": 768,
+          "device": "mps"
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.768288,
+          "inference_time_ms": 32.833,
+          "embedding_dimension": 768,
+          "device": "mps"
+        }
+      }
+    },
+    {
+      "id": "informal_02",
+      "category": "informal",
+      "expected_relation": "similar",
+      "text_a": "Tutaonana kesho basi.",
+      "text_b": "Tutakutana kesho.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.879626,
+          "inference_time_ms": 29.105,
+          "embedding_dimension": 768,
+          "device": "mps"
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.875298,
+          "inference_time_ms": 31.74,
+          "embedding_dimension": 768,
+          "device": "mps"
+        }
+      }
+    },
+    {
+      "id": "codeswitch_01",
+      "category": "code_switching",
+      "expected_relation": "similar",
+      "text_a": "Niko meeting lakini nitakupigia baadaye.",
+      "text_b": "Niko kwenye mkutano, nitakupigia simu baadaye.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.840974,
+          "inference_time_ms": 30.935,
+          "embedding_dimension": 768,
+          "device": "mps"
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.981258,
+          "inference_time_ms": 25.19,
+          "embedding_dimension": 768,
+          "device": "mps"
+        }
+      }
+    },
+    {
+      "id": "codeswitch_02",
+      "category": "code_switching",
+      "expected_relation": "similar",
+      "text_a": "Hii assignment ni ngumu sana.",
+      "text_b": "Kazi hii ya shule ni ngumu sana.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.76057,
+          "inference_time_ms": 27.417,
+          "embedding_dimension": 768,
+          "device": "mps"
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.964577,
+          "inference_time_ms": 22.386,
+          "embedding_dimension": 768,
+          "device": "mps"
+        }
+      }
+    }
+  ]
+}

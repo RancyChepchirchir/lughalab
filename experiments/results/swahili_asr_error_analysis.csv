@@ -1,0 +1,11 @@
+sample_id,category,model,substitutions,deletions,insertions,reference_words,wer,cer
+standard_01,standard,whisper-small,3,0,1,8,0.5,0.087719
+standard_01,standard,sauti-v1,2,1,0,8,0.375,0.035088
+standard_02,standard,whisper-small,5,1,3,7,1.285714,0.208333
+standard_02,standard,sauti-v1,0,0,0,7,0.0,0.0
+informal_01,informal,whisper-small,6,0,1,6,1.166667,0.25
+informal_01,informal,sauti-v1,1,1,0,6,0.333333,0.055556
+codeswitch_01,code_switching,whisper-small,5,0,0,5,1.0,0.25641
+codeswitch_01,code_switching,sauti-v1,2,0,0,5,0.4,0.076923
+numbers_01,numbers,whisper-small,1,1,0,8,0.25,0.023256
+numbers_01,numbers,sauti-v1,0,0,0,8,0.0,0.0

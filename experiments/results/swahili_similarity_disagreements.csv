@@ -1,0 +1,13 @@
+id,category,expected_relation,swahbert_similarity,afroxlmr_similarity,similarity_gap,absolute_similarity_gap,text_a,text_b
+unrel_01,unrelated,unrelated,0.475419,0.96596,-0.49054100000000006,0.49054100000000006,Mtoto anasoma kitabu shuleni.,Mvua kubwa ilinyesha jana usiku.
+para_02,paraphrase,similar,0.681644,0.968156,-0.286512,0.286512,Mama anapika chakula jikoni.,Mama anatayarisha chakula ndani ya jikoni.
+para_01,paraphrase,similar,0.691344,0.967697,-0.27635300000000007,0.27635300000000007,Mtoto anasoma kitabu shuleni.,Mwanafunzi anajifunza kwa kusoma kitabu.
+unrel_02,unrelated,unrelated,0.663876,0.915511,-0.25163499999999994,0.25163499999999994,Samaki wanaogelea baharini.,Kompyuta yangu imeharibika.
+topic_01,topical_similarity,related,0.712701,0.953485,-0.240784,0.240784,Daktari anawatibu wagonjwa hospitalini.,Muuguzi anafanya kazi katika hospitali.
+codeswitch_02,code_switching,similar,0.76057,0.964577,-0.20400700000000005,0.20400700000000005,Hii assignment ni ngumu sana.,Kazi hii ya shule ni ngumu sana.
+topic_02,topical_similarity,related,0.576117,0.775714,-0.19959700000000002,0.19959700000000002,Wanafunzi wanasoma kwa ajili ya mtihani.,Mwalimu anafundisha darasani.
+codeswitch_01,code_switching,similar,0.840974,0.981258,-0.14028399999999996,0.14028399999999996,Niko meeting lakini nitakupigia baadaye.,"Niko kwenye mkutano, nitakupigia simu baadaye."
+contrast_01,contrast,contrast,0.945844,0.892837,0.053007000000000026,0.053007000000000026,Juma anapenda kahawa.,Juma hapendi kahawa.
+contrast_02,contrast,contrast,0.956036,0.995903,-0.039866999999999986,0.039866999999999986,Leo hali ya hewa ni nzuri.,Leo hali ya hewa si nzuri.
+informal_02,informal,similar,0.879626,0.875298,0.0043279999999999985,0.0043279999999999985,Tutaonana kesho basi.,Tutakutana kesho.
+informal_01,informal,similar,0.766008,0.768288,-0.0022799999999999487,0.0022799999999999487,Niko poa leo.,Ninajisikia vizuri leo.

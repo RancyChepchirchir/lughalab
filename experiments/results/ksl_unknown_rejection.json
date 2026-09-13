@@ -1,0 +1,103 @@
+{
+  "experiment": "LughaLab KSL Unknown-Sign Rejection Diagnostic v1",
+  "clean_accuracy": 0.9919354838709677,
+  "temporal_preprocessing": "linear interpolation to 64 frames; one of several near-equivalent candidates under the reconstruction audit",
+  "summaries": {
+    "clean_id": {
+      "count": 124,
+      "mean_max_probability": 0.5517348647117615,
+      "median_max_probability": 0.5500097274780273,
+      "p05_max_probability": 0.40453219413757324,
+      "mean_margin": 0.33478954434394836,
+      "p05_margin": 0.11904774606227875,
+      "mean_normalized_entropy": 0.8137805461883545,
+      "p95_normalized_entropy": 0.9393595457077026
+    },
+    "temporal_reverse": {
+      "count": 124,
+      "mean_max_probability": 0.5513430237770081,
+      "median_max_probability": 0.5515161156654358,
+      "p05_max_probability": 0.4054088890552521,
+      "mean_margin": 0.3340347707271576,
+      "p05_margin": 0.117851622402668,
+      "mean_normalized_entropy": 0.8144847750663757,
+      "p95_normalized_entropy": 0.9392136931419373
+    },
+    "temporal_shuffle": {
+      "count": 124,
+      "mean_max_probability": 0.5526586771011353,
+      "median_max_probability": 0.5531482696533203,
+      "p05_max_probability": 0.40457242727279663,
+      "mean_margin": 0.3356880843639374,
+      "p05_margin": 0.11812913417816162,
+      "mean_normalized_entropy": 0.8125823140144348,
+      "p95_normalized_entropy": 0.9399778842926025
+    },
+    "static_freeze": {
+      "count": 124,
+      "mean_max_probability": 0.5199216604232788,
+      "median_max_probability": 0.5281756520271301,
+      "p05_max_probability": 0.362449586391449,
+      "mean_margin": 0.2836281955242157,
+      "p05_margin": 0.051163624972105026,
+      "mean_normalized_entropy": 0.8295712471008301,
+      "p95_normalized_entropy": 0.9447361826896667
+    },
+    "coordinate_noise": {
+      "count": 124,
+      "mean_max_probability": 0.3645094633102417,
+      "median_max_probability": 0.3562416434288025,
+      "p05_max_probability": 0.2807427644729614,
+      "mean_margin": 0.09148416668176651,
+      "p05_margin": 0.00567198870703578,
+      "mean_normalized_entropy": 0.9543747901916504,
+      "p95_normalized_entropy": 0.9955124258995056
+    }
+  },
+  "id_derived_thresholds": {
+    "max_probability_lower_5pct": 0.40453219413757324,
+    "margin_lower_5pct": 0.11904774606227875,
+    "entropy_upper_95pct": 0.9393595457077026
+  },
+  "rejection_rates": {
+    "clean_id": 0.11290322580645161,
+    "temporal_reverse": 0.10483870967741936,
+    "temporal_shuffle": 0.11290322580645161,
+    "static_freeze": 0.25,
+    "coordinate_noise": 0.8225806451612904,
+    "external_video": false
+  },
+  "external_video": {
+    "condition": "external_video",
+    "source": "data/ksl/videos/landmark_test_01.mp4",
+    "hand_detection_rate": 0.031963,
+    "predicted_label": "hello",
+    "max_probability": 0.6589154601097107,
+    "margin": 0.42426200211048126,
+    "normalized_entropy": 0.6685834109069089,
+    "probabilities": [
+      {
+        "index": 1,
+        "label": "hello",
+        "probability": 0.6589154601097107
+      },
+      {
+        "index": 2,
+        "label": "is",
+        "probability": 0.23465345799922943
+      },
+      {
+        "index": 3,
+        "label": "my",
+        "probability": 0.05776546895503998
+      },
+      {
+        "index": 0,
+        "label": "father",
+        "probability": 0.04866557940840721
+      }
+    ],
+    "note": "External pipeline-control video. It is not assigned a true KSL label."
+  },
+  "methodological_warning": "The shifted sequences are synthetic distribution-shift controls, not genuine unknown KSL lexical classes. Thresholds are exploratory and must not be interpreted as a validated open-set recognition system."
+}
