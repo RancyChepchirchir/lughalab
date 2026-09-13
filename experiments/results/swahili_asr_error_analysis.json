@@ -1,0 +1,445 @@
+{
+  "experiment": "LughaLab Swahili ASR Error Decomposition v1",
+  "model_summary": {
+    "whisper-small": {
+      "reference_words": 34,
+      "substitutions": 20,
+      "deletions": 2,
+      "insertions": 5,
+      "corpus_wer": 0.794118,
+      "mean_utterance_wer": 0.840476,
+      "mean_utterance_cer": 0.165144,
+      "substitution_rate": 0.588235,
+      "deletion_rate": 0.058824,
+      "insertion_rate": 0.147059,
+      "top_substitutions": [
+        {
+          "reference": "ninafurahia",
+          "hypothesis": "hiya",
+          "count": 1
+        },
+        {
+          "reference": "teknolojia",
+          "hypothesis": "teknologia",
+          "count": 1
+        },
+        {
+          "reference": "lugha",
+          "hypothesis": "luga",
+          "count": 1
+        },
+        {
+          "reference": "wanafunzi wanasoma vitabu",
+          "hypothesis": "na sama vitabo",
+          "count": 1
+        },
+        {
+          "reference": "maktaba ya",
+          "hypothesis": "makta bayachua",
+          "count": 1
+        },
+        {
+          "reference": "niko poa leo lakini nimechoka kidogo",
+          "hypothesis": "aleo lakini ni mechuka kido go",
+          "count": 1
+        },
+        {
+          "reference": "niko meeting lakini nitakupigia baadaye",
+          "hypothesis": "komiting lakini entaku pigia badae",
+          "count": 1
+        },
+        {
+          "reference": "kalamu",
+          "hypothesis": "kalamutano",
+          "count": 1
+        }
+      ],
+      "top_deletions": [
+        {
+          "word": "chuo",
+          "count": 1
+        },
+        {
+          "word": "tano",
+          "count": 1
+        }
+      ],
+      "top_insertions": [
+        {
+          "word": "ninofura",
+          "count": 1
+        },
+        {
+          "word": "wana",
+          "count": 1
+        },
+        {
+          "word": "funze",
+          "count": 1
+        },
+        {
+          "word": "wa",
+          "count": 1
+        },
+        {
+          "word": "kupo",
+          "count": 1
+        }
+      ]
+    },
+    "sauti-v1": {
+      "reference_words": 34,
+      "substitutions": 5,
+      "deletions": 2,
+      "insertions": 0,
+      "corpus_wer": 0.205882,
+      "mean_utterance_wer": 0.221667,
+      "mean_utterance_cer": 0.033513,
+      "substitution_rate": 0.147059,
+      "deletion_rate": 0.058824,
+      "insertion_rate": 0.0,
+      "top_substitutions": [
+        {
+          "reference": "ninafurahia",
+          "hypothesis": "ninafurahi",
+          "count": 1
+        },
+        {
+          "reference": "akili",
+          "hypothesis": "akilibandia",
+          "count": 1
+        },
+        {
+          "reference": "niko",
+          "hypothesis": "nokopoa",
+          "count": 1
+        },
+        {
+          "reference": "meeting",
+          "hypothesis": "miting",
+          "count": 1
+        },
+        {
+          "reference": "baadaye",
+          "hypothesis": "baadae",
+          "count": 1
+        }
+      ],
+      "top_deletions": [
+        {
+          "word": "bandia",
+          "count": 1
+        },
+        {
+          "word": "poa",
+          "count": 1
+        }
+      ],
+      "top_insertions": []
+    }
+  },
+  "category_summary": {
+    "code_switching": {
+      "whisper-small": {
+        "substitutions": 5,
+        "deletions": 0,
+        "insertions": 0,
+        "corpus_wer": 1.0
+      },
+      "sauti-v1": {
+        "substitutions": 2,
+        "deletions": 0,
+        "insertions": 0,
+        "corpus_wer": 0.4
+      }
+    },
+    "informal": {
+      "whisper-small": {
+        "substitutions": 6,
+        "deletions": 0,
+        "insertions": 1,
+        "corpus_wer": 1.166667
+      },
+      "sauti-v1": {
+        "substitutions": 1,
+        "deletions": 1,
+        "insertions": 0,
+        "corpus_wer": 0.333333
+      }
+    },
+    "numbers": {
+      "whisper-small": {
+        "substitutions": 1,
+        "deletions": 1,
+        "insertions": 0,
+        "corpus_wer": 0.25
+      },
+      "sauti-v1": {
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "corpus_wer": 0.0
+      }
+    },
+    "standard": {
+      "whisper-small": {
+        "substitutions": 8,
+        "deletions": 1,
+        "insertions": 4,
+        "corpus_wer": 0.866667
+      },
+      "sauti-v1": {
+        "substitutions": 2,
+        "deletions": 1,
+        "insertions": 0,
+        "corpus_wer": 0.2
+      }
+    }
+  },
+  "records": [
+    {
+      "id": "standard_01",
+      "category": "standard",
+      "reference": "ninafurahia kujifunza akili bandia na teknolojia ya lugha",
+      "models": {
+        "whisper-small": {
+          "hits": 5,
+          "substitutions_count": 3,
+          "deletions_count": 0,
+          "insertions_count": 1,
+          "reference_word_count": 8,
+          "substitutions": [
+            {
+              "reference": "ninafurahia",
+              "hypothesis": "hiya"
+            },
+            {
+              "reference": "teknolojia",
+              "hypothesis": "teknologia"
+            },
+            {
+              "reference": "lugha",
+              "hypothesis": "luga"
+            }
+          ],
+          "deletions": [],
+          "insertions": [
+            {
+              "hypothesis": "ninofura"
+            }
+          ],
+          "wer": 0.5,
+          "cer": 0.087719
+        },
+        "sauti-v1": {
+          "hits": 5,
+          "substitutions_count": 2,
+          "deletions_count": 1,
+          "insertions_count": 0,
+          "reference_word_count": 8,
+          "substitutions": [
+            {
+              "reference": "ninafurahia",
+              "hypothesis": "ninafurahi"
+            },
+            {
+              "reference": "akili",
+              "hypothesis": "akilibandia"
+            }
+          ],
+          "deletions": [
+            {
+              "reference": "bandia"
+            }
+          ],
+          "insertions": [],
+          "wer": 0.375,
+          "cer": 0.035088
+        }
+      }
+    },
+    {
+      "id": "standard_02",
+      "category": "standard",
+      "reference": "wanafunzi wanasoma vitabu katika maktaba ya chuo",
+      "models": {
+        "whisper-small": {
+          "hits": 1,
+          "substitutions_count": 5,
+          "deletions_count": 1,
+          "insertions_count": 3,
+          "reference_word_count": 7,
+          "substitutions": [
+            {
+              "reference": "wanafunzi wanasoma vitabu",
+              "hypothesis": "na sama vitabo"
+            },
+            {
+              "reference": "maktaba ya",
+              "hypothesis": "makta bayachua"
+            }
+          ],
+          "deletions": [
+            {
+              "reference": "chuo"
+            }
+          ],
+          "insertions": [
+            {
+              "hypothesis": "wana funze wa"
+            }
+          ],
+          "wer": 1.285714,
+          "cer": 0.208333
+        },
+        "sauti-v1": {
+          "hits": 7,
+          "substitutions_count": 0,
+          "deletions_count": 0,
+          "insertions_count": 0,
+          "reference_word_count": 7,
+          "substitutions": [],
+          "deletions": [],
+          "insertions": [],
+          "wer": 0.0,
+          "cer": 0.0
+        }
+      }
+    },
+    {
+      "id": "informal_01",
+      "category": "informal",
+      "reference": "niko poa leo lakini nimechoka kidogo",
+      "models": {
+        "whisper-small": {
+          "hits": 0,
+          "substitutions_count": 6,
+          "deletions_count": 0,
+          "insertions_count": 1,
+          "reference_word_count": 6,
+          "substitutions": [
+            {
+              "reference": "niko poa leo lakini nimechoka kidogo",
+              "hypothesis": "aleo lakini ni mechuka kido go"
+            }
+          ],
+          "deletions": [],
+          "insertions": [
+            {
+              "hypothesis": "kupo"
+            }
+          ],
+          "wer": 1.166667,
+          "cer": 0.25
+        },
+        "sauti-v1": {
+          "hits": 4,
+          "substitutions_count": 1,
+          "deletions_count": 1,
+          "insertions_count": 0,
+          "reference_word_count": 6,
+          "substitutions": [
+            {
+              "reference": "niko",
+              "hypothesis": "nokopoa"
+            }
+          ],
+          "deletions": [
+            {
+              "reference": "poa"
+            }
+          ],
+          "insertions": [],
+          "wer": 0.333333,
+          "cer": 0.055556
+        }
+      }
+    },
+    {
+      "id": "codeswitch_01",
+      "category": "code_switching",
+      "reference": "niko meeting lakini nitakupigia baadaye",
+      "models": {
+        "whisper-small": {
+          "hits": 0,
+          "substitutions_count": 5,
+          "deletions_count": 0,
+          "insertions_count": 0,
+          "reference_word_count": 5,
+          "substitutions": [
+            {
+              "reference": "niko meeting lakini nitakupigia baadaye",
+              "hypothesis": "komiting lakini entaku pigia badae"
+            }
+          ],
+          "deletions": [],
+          "insertions": [],
+          "wer": 1.0,
+          "cer": 0.25641
+        },
+        "sauti-v1": {
+          "hits": 3,
+          "substitutions_count": 2,
+          "deletions_count": 0,
+          "insertions_count": 0,
+          "reference_word_count": 5,
+          "substitutions": [
+            {
+              "reference": "meeting",
+              "hypothesis": "miting"
+            },
+            {
+              "reference": "baadaye",
+              "hypothesis": "baadae"
+            }
+          ],
+          "deletions": [],
+          "insertions": [],
+          "wer": 0.4,
+          "cer": 0.076923
+        }
+      }
+    },
+    {
+      "id": "numbers_01",
+      "category": "numbers",
+      "reference": "nina vitabu ishirini na tatu na kalamu tano",
+      "models": {
+        "whisper-small": {
+          "hits": 6,
+          "substitutions_count": 1,
+          "deletions_count": 1,
+          "insertions_count": 0,
+          "reference_word_count": 8,
+          "substitutions": [
+            {
+              "reference": "kalamu",
+              "hypothesis": "kalamutano"
+            }
+          ],
+          "deletions": [
+            {
+              "reference": "tano"
+            }
+          ],
+          "insertions": [],
+          "wer": 0.25,
+          "cer": 0.023256
+        },
+        "sauti-v1": {
+          "hits": 8,
+          "substitutions_count": 0,
+          "deletions_count": 0,
+          "insertions_count": 0,
+          "reference_word_count": 8,
+          "substitutions": [],
+          "deletions": [],
+          "insertions": [],
+          "wer": 0.0,
+          "cer": 0.0
+        }
+      }
+    }
+  ],
+  "scientific_note": "ASR errors are decomposed into substitutions, deletions and insertions using word-level alignment. This is a small diagnostic dataset. Repeated errors should not be interpreted as general Swahili error distributions."
+}

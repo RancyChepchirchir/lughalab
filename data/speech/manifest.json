@@ -1,0 +1,32 @@
+[
+  {
+    "id": "standard_01",
+    "category": "standard",
+    "audio": "data/speech/audio/standard_01.m4a",
+    "reference": "Ninafurahia kujifunza akili bandia na teknolojia ya lugha."
+  },
+  {
+    "id": "standard_02",
+    "category": "standard",
+    "audio": "data/speech/audio/standard_02.m4a",
+    "reference": "Wanafunzi wanasoma vitabu katika maktaba ya chuo."
+  },
+  {
+    "id": "informal_01",
+    "category": "informal",
+    "audio": "data/speech/audio/informal_01.m4a",
+    "reference": "Niko poa leo lakini nimechoka kidogo."
+  },
+  {
+    "id": "codeswitch_01",
+    "category": "code_switching",
+    "audio": "data/speech/audio/codeswitch_01.m4a",
+    "reference": "Niko meeting lakini nitakupigia baadaye."
+  },
+  {
+    "id": "numbers_01",
+    "category": "numbers",
+    "audio": "data/speech/audio/numbers_01.m4a",
+    "reference": "Nina vitabu ishirini na tatu na kalamu tano."
+  }
+]

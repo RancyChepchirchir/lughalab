@@ -1,0 +1,199 @@
+{
+  "experiment": "LughaLab Swahili contextual embedding similarity analysis",
+  "source_results": "/Users/rancychepchirchir/Projects/lughalab/experiments/results/swahili_similarity_results.json",
+  "global_summary": {
+    "record_count": 12,
+    "swahbert": {
+      "mean_similarity": 0.745847,
+      "median_similarity": 0.736635,
+      "mean_latency_ms": 406.799,
+      "median_latency_ms": 28.261
+    },
+    "afroxlmr": {
+      "mean_similarity": 0.918724,
+      "median_similarity": 0.959031,
+      "mean_latency_ms": 377.277,
+      "median_latency_ms": 26.712
+    },
+    "similarity_gap": {
+      "mean": -0.172877,
+      "median": -0.201802,
+      "mean_absolute": 0.182433
+    }
+  },
+  "category_summary": [
+    {
+      "category": "code_switching",
+      "count": 2,
+      "swahbert_mean_similarity": 0.800772,
+      "afroxlmr_mean_similarity": 0.972917,
+      "mean_similarity_gap": -0.172146,
+      "mean_absolute_gap": 0.172146,
+      "swahbert_mean_latency_ms": 29.176,
+      "afroxlmr_mean_latency_ms": 23.788
+    },
+    {
+      "category": "contrast",
+      "count": 2,
+      "swahbert_mean_similarity": 0.95094,
+      "afroxlmr_mean_similarity": 0.94437,
+      "mean_similarity_gap": 0.00657,
+      "mean_absolute_gap": 0.046437,
+      "swahbert_mean_latency_ms": 94.367,
+      "afroxlmr_mean_latency_ms": 20.703
+    },
+    {
+      "category": "informal",
+      "count": 2,
+      "swahbert_mean_similarity": 0.822817,
+      "afroxlmr_mean_similarity": 0.821793,
+      "mean_similarity_gap": 0.001024,
+      "mean_absolute_gap": 0.003304,
+      "swahbert_mean_latency_ms": 24.325,
+      "afroxlmr_mean_latency_ms": 32.286
+    },
+    {
+      "category": "paraphrase",
+      "count": 2,
+      "swahbert_mean_similarity": 0.686494,
+      "afroxlmr_mean_similarity": 0.967927,
+      "mean_similarity_gap": -0.281433,
+      "mean_absolute_gap": 0.281433,
+      "swahbert_mean_latency_ms": 2184.341,
+      "afroxlmr_mean_latency_ms": 2137.236
+    },
+    {
+      "category": "topical_similarity",
+      "count": 2,
+      "swahbert_mean_similarity": 0.644409,
+      "afroxlmr_mean_similarity": 0.864599,
+      "mean_similarity_gap": -0.220191,
+      "mean_absolute_gap": 0.220191,
+      "swahbert_mean_latency_ms": 90.252,
+      "afroxlmr_mean_latency_ms": 29.716
+    },
+    {
+      "category": "unrelated",
+      "count": 2,
+      "swahbert_mean_similarity": 0.569647,
+      "afroxlmr_mean_similarity": 0.940735,
+      "mean_similarity_gap": -0.371088,
+      "mean_absolute_gap": 0.371088,
+      "swahbert_mean_latency_ms": 18.332,
+      "afroxlmr_mean_latency_ms": 19.931
+    }
+  ],
+  "largest_model_disagreements": [
+    {
+      "id": "unrel_01",
+      "category": "unrelated",
+      "expected_relation": "unrelated",
+      "text_a": "Mtoto anasoma kitabu shuleni.",
+      "text_b": "Mvua kubwa ilinyesha jana usiku.",
+      "swahbert_similarity": 0.475419,
+      "afroxlmr_similarity": 0.96596,
+      "similarity_gap": -0.49054100000000006,
+      "absolute_similarity_gap": 0.49054100000000006
+    },
+    {
+      "id": "para_02",
+      "category": "paraphrase",
+      "expected_relation": "similar",
+      "text_a": "Mama anapika chakula jikoni.",
+      "text_b": "Mama anatayarisha chakula ndani ya jikoni.",
+      "swahbert_similarity": 0.681644,
+      "afroxlmr_similarity": 0.968156,
+      "similarity_gap": -0.286512,
+      "absolute_similarity_gap": 0.286512
+    },
+    {
+      "id": "para_01",
+      "category": "paraphrase",
+      "expected_relation": "similar",
+      "text_a": "Mtoto anasoma kitabu shuleni.",
+      "text_b": "Mwanafunzi anajifunza kwa kusoma kitabu.",
+      "swahbert_similarity": 0.691344,
+      "afroxlmr_similarity": 0.967697,
+      "similarity_gap": -0.27635300000000007,
+      "absolute_similarity_gap": 0.27635300000000007
+    },
+    {
+      "id": "unrel_02",
+      "category": "unrelated",
+      "expected_relation": "unrelated",
+      "text_a": "Samaki wanaogelea baharini.",
+      "text_b": "Kompyuta yangu imeharibika.",
+      "swahbert_similarity": 0.663876,
+      "afroxlmr_similarity": 0.915511,
+      "similarity_gap": -0.25163499999999994,
+      "absolute_similarity_gap": 0.25163499999999994
+    },
+    {
+      "id": "topic_01",
+      "category": "topical_similarity",
+      "expected_relation": "related",
+      "text_a": "Daktari anawatibu wagonjwa hospitalini.",
+      "text_b": "Muuguzi anafanya kazi katika hospitali.",
+      "swahbert_similarity": 0.712701,
+      "afroxlmr_similarity": 0.953485,
+      "similarity_gap": -0.240784,
+      "absolute_similarity_gap": 0.240784
+    },
+    {
+      "id": "codeswitch_02",
+      "category": "code_switching",
+      "expected_relation": "similar",
+      "text_a": "Hii assignment ni ngumu sana.",
+      "text_b": "Kazi hii ya shule ni ngumu sana.",
+      "swahbert_similarity": 0.76057,
+      "afroxlmr_similarity": 0.964577,
+      "similarity_gap": -0.20400700000000005,
+      "absolute_similarity_gap": 0.20400700000000005
+    },
+    {
+      "id": "topic_02",
+      "category": "topical_similarity",
+      "expected_relation": "related",
+      "text_a": "Wanafunzi wanasoma kwa ajili ya mtihani.",
+      "text_b": "Mwalimu anafundisha darasani.",
+      "swahbert_similarity": 0.576117,
+      "afroxlmr_similarity": 0.775714,
+      "similarity_gap": -0.19959700000000002,
+      "absolute_similarity_gap": 0.19959700000000002
+    },
+    {
+      "id": "codeswitch_01",
+      "category": "code_switching",
+      "expected_relation": "similar",
+      "text_a": "Niko meeting lakini nitakupigia baadaye.",
+      "text_b": "Niko kwenye mkutano, nitakupigia simu baadaye.",
+      "swahbert_similarity": 0.840974,
+      "afroxlmr_similarity": 0.981258,
+      "similarity_gap": -0.14028399999999996,
+      "absolute_similarity_gap": 0.14028399999999996
+    },
+    {
+      "id": "contrast_01",
+      "category": "contrast",
+      "expected_relation": "contrast",
+      "text_a": "Juma anapenda kahawa.",
+      "text_b": "Juma hapendi kahawa.",
+      "swahbert_similarity": 0.945844,
+      "afroxlmr_similarity": 0.892837,
+      "similarity_gap": 0.053007000000000026,
+      "absolute_similarity_gap": 0.053007000000000026
+    },
+    {
+      "id": "contrast_02",
+      "category": "contrast",
+      "expected_relation": "contrast",
+      "text_a": "Leo hali ya hewa ni nzuri.",
+      "text_b": "Leo hali ya hewa si nzuri.",
+      "swahbert_similarity": 0.956036,
+      "afroxlmr_similarity": 0.995903,
+      "similarity_gap": -0.039866999999999986,
+      "absolute_similarity_gap": 0.039866999999999986
+    }
+  ],
+  "scientific_note": "These results compare raw cosine similarities produced from mean-pooled contextual embeddings. They should be treated as exploratory model-behaviour diagnostics rather than semantic accuracy measurements."
+}

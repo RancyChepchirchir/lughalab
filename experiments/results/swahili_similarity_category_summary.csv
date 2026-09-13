@@ -1,0 +1,7 @@
+category,count,swahbert_mean_similarity,afroxlmr_mean_similarity,mean_similarity_gap,mean_absolute_gap,swahbert_mean_latency_ms,afroxlmr_mean_latency_ms
+code_switching,2,0.800772,0.972917,-0.172146,0.172146,29.176,23.788
+contrast,2,0.95094,0.94437,0.00657,0.046437,94.367,20.703
+informal,2,0.822817,0.821793,0.001024,0.003304,24.325,32.286
+paraphrase,2,0.686494,0.967927,-0.281433,0.281433,2184.341,2137.236
+topical_similarity,2,0.644409,0.864599,-0.220191,0.220191,90.252,29.716
+unrelated,2,0.569647,0.940735,-0.371088,0.371088,18.332,19.931

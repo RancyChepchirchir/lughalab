@@ -1,0 +1,86 @@
+[
+  {
+    "id": "para_01",
+    "category": "paraphrase",
+    "text_a": "Mtoto anasoma kitabu shuleni.",
+    "text_b": "Mwanafunzi anajifunza kwa kusoma kitabu.",
+    "expected_relation": "similar"
+  },
+  {
+    "id": "para_02",
+    "category": "paraphrase",
+    "text_a": "Mama anapika chakula jikoni.",
+    "text_b": "Mama anatayarisha chakula ndani ya jikoni.",
+    "expected_relation": "similar"
+  },
+  {
+    "id": "topic_01",
+    "category": "topical_similarity",
+    "text_a": "Daktari anawatibu wagonjwa hospitalini.",
+    "text_b": "Muuguzi anafanya kazi katika hospitali.",
+    "expected_relation": "related"
+  },
+  {
+    "id": "topic_02",
+    "category": "topical_similarity",
+    "text_a": "Wanafunzi wanasoma kwa ajili ya mtihani.",
+    "text_b": "Mwalimu anafundisha darasani.",
+    "expected_relation": "related"
+  },
+  {
+    "id": "unrel_01",
+    "category": "unrelated",
+    "text_a": "Mtoto anasoma kitabu shuleni.",
+    "text_b": "Mvua kubwa ilinyesha jana usiku.",
+    "expected_relation": "unrelated"
+  },
+  {
+    "id": "unrel_02",
+    "category": "unrelated",
+    "text_a": "Samaki wanaogelea baharini.",
+    "text_b": "Kompyuta yangu imeharibika.",
+    "expected_relation": "unrelated"
+  },
+  {
+    "id": "contrast_01",
+    "category": "contrast",
+    "text_a": "Juma anapenda kahawa.",
+    "text_b": "Juma hapendi kahawa.",
+    "expected_relation": "contrast"
+  },
+  {
+    "id": "contrast_02",
+    "category": "contrast",
+    "text_a": "Leo hali ya hewa ni nzuri.",
+    "text_b": "Leo hali ya hewa si nzuri.",
+    "expected_relation": "contrast"
+  },
+  {
+    "id": "informal_01",
+    "category": "informal",
+    "text_a": "Niko poa leo.",
+    "text_b": "Ninajisikia vizuri leo.",
+    "expected_relation": "similar"
+  },
+  {
+    "id": "informal_02",
+    "category": "informal",
+    "text_a": "Tutaonana kesho basi.",
+    "text_b": "Tutakutana kesho.",
+    "expected_relation": "similar"
+  },
+  {
+    "id": "codeswitch_01",
+    "category": "code_switching",
+    "text_a": "Niko meeting lakini nitakupigia baadaye.",
+    "text_b": "Niko kwenye mkutano, nitakupigia simu baadaye.",
+    "expected_relation": "similar"
+  },
+  {
+    "id": "codeswitch_02",
+    "category": "code_switching",
+    "text_a": "Hii assignment ni ngumu sana.",
+    "text_b": "Kazi hii ya shule ni ngumu sana.",
+    "expected_relation": "similar"
+  }
+]

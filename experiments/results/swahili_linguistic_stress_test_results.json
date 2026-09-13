@@ -1,0 +1,447 @@
+{
+  "experiment": "LughaLab Swahili Linguistic Stress Test v1",
+  "definition": {
+    "representational_shift": "1 - cosine_similarity"
+  },
+  "dataset_size": 16,
+  "runtime_seconds": 5.73,
+  "phenomenon_summary": {
+    "argument_structure": {
+      "pranaydeeps/SwahBERT-base-cased": {
+        "count": 2,
+        "mean_representational_shift": 0.026363,
+        "minimum_shift": 0.017766,
+        "maximum_shift": 0.03496
+      },
+      "Davlan/afro-xlmr-base": {
+        "count": 2,
+        "mean_representational_shift": 0.112816,
+        "minimum_shift": 0.009347,
+        "maximum_shift": 0.216286
+      }
+    },
+    "code_switching": {
+      "pranaydeeps/SwahBERT-base-cased": {
+        "count": 2,
+        "mean_representational_shift": 0.132816,
+        "minimum_shift": 0.11689,
+        "maximum_shift": 0.148741
+      },
+      "Davlan/afro-xlmr-base": {
+        "count": 2,
+        "mean_representational_shift": 0.444426,
+        "minimum_shift": 0.230131,
+        "maximum_shift": 0.658721
+      }
+    },
+    "informal_language": {
+      "pranaydeeps/SwahBERT-base-cased": {
+        "count": 2,
+        "mean_representational_shift": 0.177183,
+        "minimum_shift": 0.120374,
+        "maximum_shift": 0.233992
+      },
+      "Davlan/afro-xlmr-base": {
+        "count": 2,
+        "mean_representational_shift": 0.178207,
+        "minimum_shift": 0.124702,
+        "maximum_shift": 0.231712
+      }
+    },
+    "negation": {
+      "pranaydeeps/SwahBERT-base-cased": {
+        "count": 3,
+        "mean_representational_shift": 0.102234,
+        "minimum_shift": 0.054156,
+        "maximum_shift": 0.169428
+      },
+      "Davlan/afro-xlmr-base": {
+        "count": 3,
+        "mean_representational_shift": 0.186745,
+        "minimum_shift": 0.023118,
+        "maximum_shift": 0.429954
+      }
+    },
+    "quantification": {
+      "pranaydeeps/SwahBERT-base-cased": {
+        "count": 2,
+        "mean_representational_shift": 0.149491,
+        "minimum_shift": 0.117653,
+        "maximum_shift": 0.181328
+      },
+      "Davlan/afro-xlmr-base": {
+        "count": 2,
+        "mean_representational_shift": 0.221342,
+        "minimum_shift": 0.183567,
+        "maximum_shift": 0.259116
+      }
+    },
+    "subject_agreement": {
+      "pranaydeeps/SwahBERT-base-cased": {
+        "count": 2,
+        "mean_representational_shift": 0.15034,
+        "minimum_shift": 0.118467,
+        "maximum_shift": 0.182213
+      },
+      "Davlan/afro-xlmr-base": {
+        "count": 2,
+        "mean_representational_shift": 0.16345,
+        "minimum_shift": 0.147565,
+        "maximum_shift": 0.179335
+      }
+    },
+    "tense": {
+      "pranaydeeps/SwahBERT-base-cased": {
+        "count": 3,
+        "mean_representational_shift": 0.082381,
+        "minimum_shift": 0.053726,
+        "maximum_shift": 0.136412
+      },
+      "Davlan/afro-xlmr-base": {
+        "count": 3,
+        "mean_representational_shift": 0.036978,
+        "minimum_shift": 0.023337,
+        "maximum_shift": 0.058102
+      }
+    }
+  },
+  "records": [
+    {
+      "id": "neg_01",
+      "phenomenon": "negation",
+      "change": "affirmative_to_negative",
+      "semantic_effect": "meaning_change",
+      "description": "Negation reverses the proposition while preserving most lexical content.",
+      "text_a": "Juma anapenda kahawa.",
+      "text_b": "Juma hapendi kahawa.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.945844,
+          "representational_shift": 0.054156,
+          "inference_time_ms": 2279.817
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.892837,
+          "representational_shift": 0.107163,
+          "inference_time_ms": 2310.88
+        }
+      }
+    },
+    {
+      "id": "neg_02",
+      "phenomenon": "negation",
+      "change": "affirmative_to_negative",
+      "semantic_effect": "meaning_change",
+      "description": "Negation is expressed morphologically within the verb.",
+      "text_a": "Amina anaenda shuleni.",
+      "text_b": "Amina haendi shuleni.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.916883,
+          "representational_shift": 0.083117,
+          "inference_time_ms": 39.98
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.976882,
+          "representational_shift": 0.023118,
+          "inference_time_ms": 49.419
+        }
+      }
+    },
+    {
+      "id": "neg_03",
+      "phenomenon": "negation",
+      "change": "affirmative_to_negative",
+      "semantic_effect": "meaning_change",
+      "description": "Plural-subject negation changes verbal morphology.",
+      "text_a": "Watoto wanacheza nje.",
+      "text_b": "Watoto hawachezi nje.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.830572,
+          "representational_shift": 0.169428,
+          "inference_time_ms": 25.922
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.570046,
+          "representational_shift": 0.429954,
+          "inference_time_ms": 37.046
+        }
+      }
+    },
+    {
+      "id": "tense_01",
+      "phenomenon": "tense",
+      "change": "present_to_past",
+      "semantic_effect": "temporal_change",
+      "description": "Present tense changes to past tense.",
+      "text_a": "Juma anasoma kitabu.",
+      "text_b": "Juma alisoma kitabu.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.863588,
+          "representational_shift": 0.136412,
+          "inference_time_ms": 27.049
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.976663,
+          "representational_shift": 0.023337,
+          "inference_time_ms": 30.259
+        }
+      }
+    },
+    {
+      "id": "tense_02",
+      "phenomenon": "tense",
+      "change": "present_to_future",
+      "semantic_effect": "temporal_change",
+      "description": "Present tense changes to future tense.",
+      "text_a": "Juma anasoma kitabu.",
+      "text_b": "Juma atasoma kitabu.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.942995,
+          "representational_shift": 0.057005,
+          "inference_time_ms": 26.958
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.970505,
+          "representational_shift": 0.029495,
+          "inference_time_ms": 31.676
+        }
+      }
+    },
+    {
+      "id": "tense_03",
+      "phenomenon": "tense",
+      "change": "present_to_past",
+      "semantic_effect": "temporal_change",
+      "description": "Temporal information changes inside the verb.",
+      "text_a": "Mama anapika chakula.",
+      "text_b": "Mama alipika chakula.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.946274,
+          "representational_shift": 0.053726,
+          "inference_time_ms": 30.119
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.941898,
+          "representational_shift": 0.058102,
+          "inference_time_ms": 33.563
+        }
+      }
+    },
+    {
+      "id": "subject_01",
+      "phenomenon": "subject_agreement",
+      "change": "singular_to_plural",
+      "semantic_effect": "participant_change",
+      "description": "Subject number and verbal agreement change together.",
+      "text_a": "Mtoto anasoma kitabu.",
+      "text_b": "Watoto wanasoma kitabu.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.817787,
+          "representational_shift": 0.182213,
+          "inference_time_ms": 34.102
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.852435,
+          "representational_shift": 0.147565,
+          "inference_time_ms": 90.563
+        }
+      }
+    },
+    {
+      "id": "subject_02",
+      "phenomenon": "subject_agreement",
+      "change": "singular_to_plural",
+      "semantic_effect": "participant_change",
+      "description": "Nominal number change is reflected by subject agreement on the verb.",
+      "text_a": "Mwanafunzi anaandika.",
+      "text_b": "Wanafunzi wanaandika.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.881533,
+          "representational_shift": 0.118467,
+          "inference_time_ms": 36.015
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.820665,
+          "representational_shift": 0.179335,
+          "inference_time_ms": 47.07
+        }
+      }
+    },
+    {
+      "id": "argument_01",
+      "phenomenon": "argument_structure",
+      "change": "subject_object_swap",
+      "semantic_effect": "meaning_change",
+      "description": "The same lexical items occur but semantic roles are reversed.",
+      "text_a": "Juma anampenda Amina.",
+      "text_b": "Amina anampenda Juma.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.96504,
+          "representational_shift": 0.03496,
+          "inference_time_ms": 41.808
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.990653,
+          "representational_shift": 0.009347,
+          "inference_time_ms": 42.409
+        }
+      }
+    },
+    {
+      "id": "argument_02",
+      "phenomenon": "argument_structure",
+      "change": "subject_object_swap",
+      "semantic_effect": "meaning_change",
+      "description": "Agent and patient roles are reversed.",
+      "text_a": "Mwalimu anamfundisha mtoto.",
+      "text_b": "Mtoto anamfundisha mwalimu.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.982234,
+          "representational_shift": 0.017766,
+          "inference_time_ms": 37.037
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.783714,
+          "representational_shift": 0.216286,
+          "inference_time_ms": 77.265
+        }
+      }
+    },
+    {
+      "id": "quantity_01",
+      "phenomenon": "quantification",
+      "change": "universal_to_partial",
+      "semantic_effect": "meaning_change",
+      "description": "Universal quantification changes to partial quantification.",
+      "text_a": "Watoto wote walifika.",
+      "text_b": "Watoto wachache walifika.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.882347,
+          "representational_shift": 0.117653,
+          "inference_time_ms": 23.689
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.740884,
+          "representational_shift": 0.259116,
+          "inference_time_ms": 20.945
+        }
+      }
+    },
+    {
+      "id": "quantity_02",
+      "phenomenon": "quantification",
+      "change": "universal_to_existential",
+      "semantic_effect": "meaning_change",
+      "description": "The number of participants satisfying the proposition changes.",
+      "text_a": "Wanafunzi wote walifaulu.",
+      "text_b": "Baadhi ya wanafunzi walifaulu.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.818672,
+          "representational_shift": 0.181328,
+          "inference_time_ms": 24.136
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.816433,
+          "representational_shift": 0.183567,
+          "inference_time_ms": 35.044
+        }
+      }
+    },
+    {
+      "id": "code_01",
+      "phenomenon": "code_switching",
+      "change": "swahili_to_english_lexical_switch",
+      "semantic_effect": "meaning_preserving",
+      "description": "A Swahili lexical item is replaced with a commonly code-switched English equivalent.",
+      "text_a": "Niko kwenye mkutano sasa.",
+      "text_b": "Niko meeting sasa.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.851259,
+          "representational_shift": 0.148741,
+          "inference_time_ms": 35.531
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.769869,
+          "representational_shift": 0.230131,
+          "inference_time_ms": 33.931
+        }
+      }
+    },
+    {
+      "id": "code_02",
+      "phenomenon": "code_switching",
+      "change": "swahili_to_english_verb_switch",
+      "semantic_effect": "meaning_preserving",
+      "description": "English lexical material is embedded into a Swahili construction.",
+      "text_a": "Nitakupigia simu baadaye.",
+      "text_b": "Nitakucall baadaye.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.88311,
+          "representational_shift": 0.11689,
+          "inference_time_ms": 38.762
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.341279,
+          "representational_shift": 0.658721,
+          "inference_time_ms": 38.22
+        }
+      }
+    },
+    {
+      "id": "informal_01",
+      "phenomenon": "informal_language",
+      "change": "standard_to_informal",
+      "semantic_effect": "approximately_meaning_preserving",
+      "description": "More standard wording changes to conversational wording.",
+      "text_a": "Ninajisikia vizuri leo.",
+      "text_b": "Niko poa leo.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.766008,
+          "representational_shift": 0.233992,
+          "inference_time_ms": 34.382
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.768288,
+          "representational_shift": 0.231712,
+          "inference_time_ms": 36.189
+        }
+      }
+    },
+    {
+      "id": "informal_02",
+      "phenomenon": "informal_language",
+      "change": "standard_to_conversational",
+      "semantic_effect": "approximately_meaning_preserving",
+      "description": "Conversational formulation expresses approximately the same intention.",
+      "text_a": "Tutakutana kesho.",
+      "text_b": "Tutaonana kesho basi.",
+      "models": {
+        "pranaydeeps/SwahBERT-base-cased": {
+          "similarity": 0.879626,
+          "representational_shift": 0.120374,
+          "inference_time_ms": 38.501
+        },
+        "Davlan/afro-xlmr-base": {
+          "similarity": 0.875298,
+          "representational_shift": 0.124702,
+          "inference_time_ms": 40.428
+        }
+      }
+    }
+  ],
+  "scientific_note": "Representational shift measures movement in embedding space after a controlled linguistic transformation. Larger movement is not inherently better: the interpretation depends on whether the transformation is intended to preserve or alter meaning."
+}

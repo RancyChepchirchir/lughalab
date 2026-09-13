@@ -1,0 +1,190 @@
+{
+  "experiment": "LughaLab Linguistic Sensitivity vs Invariance Analysis",
+  "definition": {
+    "desired_sensitivity": "mean representational shift for meaning-changing transformations",
+    "desired_invariance": "low representational shift for meaning-preserving transformations",
+    "provisional_lss": "mean_shift(meaning-changing) - mean_shift(meaning-preserving)"
+  },
+  "models": {
+    "swahbert": {
+      "model": "pranaydeeps/SwahBERT-base-cased",
+      "meaning_changing": {
+        "count": 12,
+        "mean_shift": 0.100519
+      },
+      "meaning_preserving": {
+        "count": 4,
+        "mean_shift": 0.154999
+      },
+      "provisional_lss": -0.05448,
+      "lowest_shift_meaning_changes": [
+        {
+          "id": "argument_02",
+          "phenomenon": "argument_structure",
+          "semantic_effect": "meaning_change",
+          "representational_shift": 0.017766,
+          "text_a": "Mwalimu anamfundisha mtoto.",
+          "text_b": "Mtoto anamfundisha mwalimu."
+        },
+        {
+          "id": "argument_01",
+          "phenomenon": "argument_structure",
+          "semantic_effect": "meaning_change",
+          "representational_shift": 0.03496,
+          "text_a": "Juma anampenda Amina.",
+          "text_b": "Amina anampenda Juma."
+        },
+        {
+          "id": "tense_03",
+          "phenomenon": "tense",
+          "semantic_effect": "temporal_change",
+          "representational_shift": 0.053726,
+          "text_a": "Mama anapika chakula.",
+          "text_b": "Mama alipika chakula."
+        },
+        {
+          "id": "neg_01",
+          "phenomenon": "negation",
+          "semantic_effect": "meaning_change",
+          "representational_shift": 0.054156,
+          "text_a": "Juma anapenda kahawa.",
+          "text_b": "Juma hapendi kahawa."
+        },
+        {
+          "id": "tense_02",
+          "phenomenon": "tense",
+          "semantic_effect": "temporal_change",
+          "representational_shift": 0.057005,
+          "text_a": "Juma anasoma kitabu.",
+          "text_b": "Juma atasoma kitabu."
+        }
+      ],
+      "highest_shift_meaning_preserving": [
+        {
+          "id": "informal_01",
+          "phenomenon": "informal_language",
+          "semantic_effect": "approximately_meaning_preserving",
+          "representational_shift": 0.233992,
+          "text_a": "Ninajisikia vizuri leo.",
+          "text_b": "Niko poa leo."
+        },
+        {
+          "id": "code_01",
+          "phenomenon": "code_switching",
+          "semantic_effect": "meaning_preserving",
+          "representational_shift": 0.148741,
+          "text_a": "Niko kwenye mkutano sasa.",
+          "text_b": "Niko meeting sasa."
+        },
+        {
+          "id": "informal_02",
+          "phenomenon": "informal_language",
+          "semantic_effect": "approximately_meaning_preserving",
+          "representational_shift": 0.120374,
+          "text_a": "Tutakutana kesho.",
+          "text_b": "Tutaonana kesho basi."
+        },
+        {
+          "id": "code_02",
+          "phenomenon": "code_switching",
+          "semantic_effect": "meaning_preserving",
+          "representational_shift": 0.11689,
+          "text_a": "Nitakupigia simu baadaye.",
+          "text_b": "Nitakucall baadaye."
+        }
+      ]
+    },
+    "afroxlmr": {
+      "model": "Davlan/afro-xlmr-base",
+      "meaning_changing": {
+        "count": 12,
+        "mean_shift": 0.138865
+      },
+      "meaning_preserving": {
+        "count": 4,
+        "mean_shift": 0.311316
+      },
+      "provisional_lss": -0.172451,
+      "lowest_shift_meaning_changes": [
+        {
+          "id": "argument_01",
+          "phenomenon": "argument_structure",
+          "semantic_effect": "meaning_change",
+          "representational_shift": 0.009347,
+          "text_a": "Juma anampenda Amina.",
+          "text_b": "Amina anampenda Juma."
+        },
+        {
+          "id": "neg_02",
+          "phenomenon": "negation",
+          "semantic_effect": "meaning_change",
+          "representational_shift": 0.023118,
+          "text_a": "Amina anaenda shuleni.",
+          "text_b": "Amina haendi shuleni."
+        },
+        {
+          "id": "tense_01",
+          "phenomenon": "tense",
+          "semantic_effect": "temporal_change",
+          "representational_shift": 0.023337,
+          "text_a": "Juma anasoma kitabu.",
+          "text_b": "Juma alisoma kitabu."
+        },
+        {
+          "id": "tense_02",
+          "phenomenon": "tense",
+          "semantic_effect": "temporal_change",
+          "representational_shift": 0.029495,
+          "text_a": "Juma anasoma kitabu.",
+          "text_b": "Juma atasoma kitabu."
+        },
+        {
+          "id": "tense_03",
+          "phenomenon": "tense",
+          "semantic_effect": "temporal_change",
+          "representational_shift": 0.058102,
+          "text_a": "Mama anapika chakula.",
+          "text_b": "Mama alipika chakula."
+        }
+      ],
+      "highest_shift_meaning_preserving": [
+        {
+          "id": "code_02",
+          "phenomenon": "code_switching",
+          "semantic_effect": "meaning_preserving",
+          "representational_shift": 0.658721,
+          "text_a": "Nitakupigia simu baadaye.",
+          "text_b": "Nitakucall baadaye."
+        },
+        {
+          "id": "informal_01",
+          "phenomenon": "informal_language",
+          "semantic_effect": "approximately_meaning_preserving",
+          "representational_shift": 0.231712,
+          "text_a": "Ninajisikia vizuri leo.",
+          "text_b": "Niko poa leo."
+        },
+        {
+          "id": "code_01",
+          "phenomenon": "code_switching",
+          "semantic_effect": "meaning_preserving",
+          "representational_shift": 0.230131,
+          "text_a": "Niko kwenye mkutano sasa.",
+          "text_b": "Niko meeting sasa."
+        },
+        {
+          "id": "informal_02",
+          "phenomenon": "informal_language",
+          "semantic_effect": "approximately_meaning_preserving",
+          "representational_shift": 0.124702,
+          "text_a": "Tutakutana kesho.",
+          "text_b": "Tutaonana kesho basi."
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "lss_difference": 0.117971
+  },
+  "scientific_note": "The provisional Linguistic Sensitivity-Stability score is an exploratory diagnostic only. It has not been validated as a general-purpose evaluation metric and should not be presented as a novel metric without literature review, larger datasets and human linguistic validation."
+}

@@ -1,0 +1,25 @@
+id,category,expected_relation,model,similarity,inference_time_ms,embedding_dimension,device,text_a,text_b
+para_01,paraphrase,similar,pranaydeeps/SwahBERT-base-cased,0.691344,4109.838,768,mps,Mtoto anasoma kitabu shuleni.,Mwanafunzi anajifunza kwa kusoma kitabu.
+para_01,paraphrase,similar,Davlan/afro-xlmr-base,0.967697,4001.493,768,mps,Mtoto anasoma kitabu shuleni.,Mwanafunzi anajifunza kwa kusoma kitabu.
+para_02,paraphrase,similar,pranaydeeps/SwahBERT-base-cased,0.681644,258.845,768,mps,Mama anapika chakula jikoni.,Mama anatayarisha chakula ndani ya jikoni.
+para_02,paraphrase,similar,Davlan/afro-xlmr-base,0.968156,272.979,768,mps,Mama anapika chakula jikoni.,Mama anatayarisha chakula ndani ya jikoni.
+topic_01,topical_similarity,related,pranaydeeps/SwahBERT-base-cased,0.712701,18.828,768,mps,Daktari anawatibu wagonjwa hospitalini.,Muuguzi anafanya kazi katika hospitali.
+topic_01,topical_similarity,related,Davlan/afro-xlmr-base,0.953485,28.235,768,mps,Daktari anawatibu wagonjwa hospitalini.,Muuguzi anafanya kazi katika hospitali.
+topic_02,topical_similarity,related,pranaydeeps/SwahBERT-base-cased,0.576117,161.675,768,mps,Wanafunzi wanasoma kwa ajili ya mtihani.,Mwalimu anafundisha darasani.
+topic_02,topical_similarity,related,Davlan/afro-xlmr-base,0.775714,31.198,768,mps,Wanafunzi wanasoma kwa ajili ya mtihani.,Mwalimu anafundisha darasani.
+unrel_01,unrelated,unrelated,pranaydeeps/SwahBERT-base-cased,0.475419,17.848,768,mps,Mtoto anasoma kitabu shuleni.,Mvua kubwa ilinyesha jana usiku.
+unrel_01,unrelated,unrelated,Davlan/afro-xlmr-base,0.96596,20.192,768,mps,Mtoto anasoma kitabu shuleni.,Mvua kubwa ilinyesha jana usiku.
+unrel_02,unrelated,unrelated,pranaydeeps/SwahBERT-base-cased,0.663876,18.816,768,mps,Samaki wanaogelea baharini.,Kompyuta yangu imeharibika.
+unrel_02,unrelated,unrelated,Davlan/afro-xlmr-base,0.915511,19.669,768,mps,Samaki wanaogelea baharini.,Kompyuta yangu imeharibika.
+contrast_01,contrast,contrast,pranaydeeps/SwahBERT-base-cased,0.945844,171.208,768,mps,Juma anapenda kahawa.,Juma hapendi kahawa.
+contrast_01,contrast,contrast,Davlan/afro-xlmr-base,0.892837,22.642,768,mps,Juma anapenda kahawa.,Juma hapendi kahawa.
+contrast_02,contrast,contrast,pranaydeeps/SwahBERT-base-cased,0.956036,17.526,768,mps,Leo hali ya hewa ni nzuri.,Leo hali ya hewa si nzuri.
+contrast_02,contrast,contrast,Davlan/afro-xlmr-base,0.995903,18.765,768,mps,Leo hali ya hewa ni nzuri.,Leo hali ya hewa si nzuri.
+informal_01,informal,similar,pranaydeeps/SwahBERT-base-cased,0.766008,19.545,768,mps,Niko poa leo.,Ninajisikia vizuri leo.
+informal_01,informal,similar,Davlan/afro-xlmr-base,0.768288,32.833,768,mps,Niko poa leo.,Ninajisikia vizuri leo.
+informal_02,informal,similar,pranaydeeps/SwahBERT-base-cased,0.879626,29.105,768,mps,Tutaonana kesho basi.,Tutakutana kesho.
+informal_02,informal,similar,Davlan/afro-xlmr-base,0.875298,31.74,768,mps,Tutaonana kesho basi.,Tutakutana kesho.
+codeswitch_01,code_switching,similar,pranaydeeps/SwahBERT-base-cased,0.840974,30.935,768,mps,Niko meeting lakini nitakupigia baadaye.,"Niko kwenye mkutano, nitakupigia simu baadaye."
+codeswitch_01,code_switching,similar,Davlan/afro-xlmr-base,0.981258,25.19,768,mps,Niko meeting lakini nitakupigia baadaye.,"Niko kwenye mkutano, nitakupigia simu baadaye."
+codeswitch_02,code_switching,similar,pranaydeeps/SwahBERT-base-cased,0.76057,27.417,768,mps,Hii assignment ni ngumu sana.,Kazi hii ya shule ni ngumu sana.
+codeswitch_02,code_switching,similar,Davlan/afro-xlmr-base,0.964577,22.386,768,mps,Hii assignment ni ngumu sana.,Kazi hii ya shule ni ngumu sana.

@@ -1,0 +1,380 @@
+{
+  "experiment": "LughaLab Swahili ASR Model Comparison v1",
+  "models": {
+    "whisper-small": "openai/whisper-small",
+    "sauti-v1": "Finiflowlabs/sauti-asr-v1"
+  },
+  "dataset_size": 5,
+  "model_summary": {
+    "whisper-small": {
+      "mean_wer": 0.840476,
+      "mean_cer": 0.165144,
+      "mean_latency_ms": 646.4832,
+      "realtime_factor": 0.155136
+    },
+    "sauti-v1": {
+      "mean_wer": 0.221667,
+      "mean_cer": 0.033513,
+      "mean_latency_ms": 1460.0182,
+      "realtime_factor": 0.35036
+    }
+  },
+  "category_summary": {
+    "code_switching": {
+      "whisper-small": {
+        "mean_wer": 1.0,
+        "mean_cer": 0.25641
+      },
+      "sauti-v1": {
+        "mean_wer": 0.4,
+        "mean_cer": 0.076923
+      }
+    },
+    "informal": {
+      "whisper-small": {
+        "mean_wer": 1.166667,
+        "mean_cer": 0.25
+      },
+      "sauti-v1": {
+        "mean_wer": 0.333333,
+        "mean_cer": 0.055556
+      }
+    },
+    "numbers": {
+      "whisper-small": {
+        "mean_wer": 0.25,
+        "mean_cer": 0.023256
+      },
+      "sauti-v1": {
+        "mean_wer": 0.0,
+        "mean_cer": 0.0
+      }
+    },
+    "standard": {
+      "whisper-small": {
+        "mean_wer": 0.892857,
+        "mean_cer": 0.148026
+      },
+      "sauti-v1": {
+        "mean_wer": 0.1875,
+        "mean_cer": 0.017544
+      }
+    }
+  },
+  "records": [
+    {
+      "id": "standard_01",
+      "category": "standard",
+      "audio": "data/speech/audio/standard_01.m4a",
+      "reference_raw": "Ninafurahia kujifunza akili bandia na teknolojia ya lugha.",
+      "reference_normalised": "ninafurahia kujifunza akili bandia na teknolojia ya lugha",
+      "models": {
+        "whisper-small": {
+          "model": "openai/whisper-small",
+          "hypothesis_raw": "Ninofura hiya kujifunza akili bandia na teknologia ya luga",
+          "hypothesis_normalised": "ninofura hiya kujifunza akili bandia na teknologia ya luga",
+          "wer": 0.5,
+          "cer": 0.087719,
+          "duration_seconds": 5.119,
+          "inference_time_ms": 858.437,
+          "device": "mps"
+        },
+        "sauti-v1": {
+          "model": "Finiflowlabs/sauti-asr-v1",
+          "hypothesis_raw": "ninafurahi kujifunza akilibandia na teknolojia ya lugha",
+          "hypothesis_normalised": "ninafurahi kujifunza akilibandia na teknolojia ya lugha",
+          "wer": 0.375,
+          "cer": 0.035088,
+          "duration_seconds": 5.119,
+          "inference_time_ms": 2305.586,
+          "device": "mps"
+        }
+      },
+      "wer_improvement": 0.125,
+      "cer_improvement": 0.052631
+    },
+    {
+      "id": "standard_02",
+      "category": "standard",
+      "audio": "data/speech/audio/standard_02.m4a",
+      "reference_raw": "Wanafunzi wanasoma vitabu katika maktaba ya chuo.",
+      "reference_normalised": "wanafunzi wanasoma vitabu katika maktaba ya chuo",
+      "models": {
+        "whisper-small": {
+          "model": "openai/whisper-small",
+          "hypothesis_raw": "wana funze wa na sama vitabo katika makta bayachua",
+          "hypothesis_normalised": "wana funze wa na sama vitabo katika makta bayachua",
+          "wer": 1.285714,
+          "cer": 0.208333,
+          "duration_seconds": 5.012,
+          "inference_time_ms": 966.004,
+          "device": "mps"
+        },
+        "sauti-v1": {
+          "model": "Finiflowlabs/sauti-asr-v1",
+          "hypothesis_raw": "wanafunzi wanasoma vitabu katika maktaba ya chuo",
+          "hypothesis_normalised": "wanafunzi wanasoma vitabu katika maktaba ya chuo",
+          "wer": 0.0,
+          "cer": 0.0,
+          "duration_seconds": 5.012,
+          "inference_time_ms": 1286.969,
+          "device": "mps"
+        }
+      },
+      "wer_improvement": 1.285714,
+      "cer_improvement": 0.208333
+    },
+    {
+      "id": "informal_01",
+      "category": "informal",
+      "audio": "data/speech/audio/informal_01.m4a",
+      "reference_raw": "Niko poa leo lakini nimechoka kidogo.",
+      "reference_normalised": "niko poa leo lakini nimechoka kidogo",
+      "models": {
+        "whisper-small": {
+          "model": "openai/whisper-small",
+          "hypothesis_raw": "Kupo aleo lakini ni mechuka kido go",
+          "hypothesis_normalised": "kupo aleo lakini ni mechuka kido go",
+          "wer": 1.166667,
+          "cer": 0.25,
+          "duration_seconds": 2.793,
+          "inference_time_ms": 468.93,
+          "device": "mps"
+        },
+        "sauti-v1": {
+          "model": "Finiflowlabs/sauti-asr-v1",
+          "hypothesis_raw": "nokopoa leo lakini nimechoka kidogo",
+          "hypothesis_normalised": "nokopoa leo lakini nimechoka kidogo",
+          "wer": 0.333333,
+          "cer": 0.055556,
+          "duration_seconds": 2.793,
+          "inference_time_ms": 1206.306,
+          "device": "mps"
+        }
+      },
+      "wer_improvement": 0.833334,
+      "cer_improvement": 0.194444
+    },
+    {
+      "id": "codeswitch_01",
+      "category": "code_switching",
+      "audio": "data/speech/audio/codeswitch_01.m4a",
+      "reference_raw": "Niko meeting lakini nitakupigia baadaye.",
+      "reference_normalised": "niko meeting lakini nitakupigia baadaye",
+      "models": {
+        "whisper-small": {
+          "model": "openai/whisper-small",
+          "hypothesis_raw": "Komiting, lakini entaku pigia badae.",
+          "hypothesis_normalised": "komiting lakini entaku pigia badae",
+          "wer": 1.0,
+          "cer": 0.25641,
+          "duration_seconds": 3.433,
+          "inference_time_ms": 462.323,
+          "device": "mps"
+        },
+        "sauti-v1": {
+          "model": "Finiflowlabs/sauti-asr-v1",
+          "hypothesis_raw": "niko miting, lakini nitakupigia baadae",
+          "hypothesis_normalised": "niko miting lakini nitakupigia baadae",
+          "wer": 0.4,
+          "cer": 0.076923,
+          "duration_seconds": 3.433,
+          "inference_time_ms": 1237.727,
+          "device": "mps"
+        }
+      },
+      "wer_improvement": 0.6,
+      "cer_improvement": 0.179487
+    },
+    {
+      "id": "numbers_01",
+      "category": "numbers",
+      "audio": "data/speech/audio/numbers_01.m4a",
+      "reference_raw": "Nina vitabu ishirini na tatu na kalamu tano.",
+      "reference_normalised": "nina vitabu ishirini na tatu na kalamu tano",
+      "models": {
+        "whisper-small": {
+          "model": "openai/whisper-small",
+          "hypothesis_raw": "Nina vitabu ishirini na tatu na kalamutano",
+          "hypothesis_normalised": "nina vitabu ishirini na tatu na kalamutano",
+          "wer": 0.25,
+          "cer": 0.023256,
+          "duration_seconds": 4.479,
+          "inference_time_ms": 476.722,
+          "device": "mps"
+        },
+        "sauti-v1": {
+          "model": "Finiflowlabs/sauti-asr-v1",
+          "hypothesis_raw": "nina vitabu ishirini na tatu na kalamu tano",
+          "hypothesis_normalised": "nina vitabu ishirini na tatu na kalamu tano",
+          "wer": 0.0,
+          "cer": 0.0,
+          "duration_seconds": 4.479,
+          "inference_time_ms": 1263.503,
+          "device": "mps"
+        }
+      },
+      "wer_improvement": 0.25,
+      "cer_improvement": 0.023256
+    }
+  ],
+  "largest_sauti_improvements": [
+    {
+      "id": "standard_02",
+      "category": "standard",
+      "audio": "data/speech/audio/standard_02.m4a",
+      "reference_raw": "Wanafunzi wanasoma vitabu katika maktaba ya chuo.",
+      "reference_normalised": "wanafunzi wanasoma vitabu katika maktaba ya chuo",
+      "models": {
+        "whisper-small": {
+          "model": "openai/whisper-small",
+          "hypothesis_raw": "wana funze wa na sama vitabo katika makta bayachua",
+          "hypothesis_normalised": "wana funze wa na sama vitabo katika makta bayachua",
+          "wer": 1.285714,
+          "cer": 0.208333,
+          "duration_seconds": 5.012,
+          "inference_time_ms": 966.004,
+          "device": "mps"
+        },
+        "sauti-v1": {
+          "model": "Finiflowlabs/sauti-asr-v1",
+          "hypothesis_raw": "wanafunzi wanasoma vitabu katika maktaba ya chuo",
+          "hypothesis_normalised": "wanafunzi wanasoma vitabu katika maktaba ya chuo",
+          "wer": 0.0,
+          "cer": 0.0,
+          "duration_seconds": 5.012,
+          "inference_time_ms": 1286.969,
+          "device": "mps"
+        }
+      },
+      "wer_improvement": 1.285714,
+      "cer_improvement": 0.208333
+    },
+    {
+      "id": "informal_01",
+      "category": "informal",
+      "audio": "data/speech/audio/informal_01.m4a",
+      "reference_raw": "Niko poa leo lakini nimechoka kidogo.",
+      "reference_normalised": "niko poa leo lakini nimechoka kidogo",
+      "models": {
+        "whisper-small": {
+          "model": "openai/whisper-small",
+          "hypothesis_raw": "Kupo aleo lakini ni mechuka kido go",
+          "hypothesis_normalised": "kupo aleo lakini ni mechuka kido go",
+          "wer": 1.166667,
+          "cer": 0.25,
+          "duration_seconds": 2.793,
+          "inference_time_ms": 468.93,
+          "device": "mps"
+        },
+        "sauti-v1": {
+          "model": "Finiflowlabs/sauti-asr-v1",
+          "hypothesis_raw": "nokopoa leo lakini nimechoka kidogo",
+          "hypothesis_normalised": "nokopoa leo lakini nimechoka kidogo",
+          "wer": 0.333333,
+          "cer": 0.055556,
+          "duration_seconds": 2.793,
+          "inference_time_ms": 1206.306,
+          "device": "mps"
+        }
+      },
+      "wer_improvement": 0.833334,
+      "cer_improvement": 0.194444
+    },
+    {
+      "id": "codeswitch_01",
+      "category": "code_switching",
+      "audio": "data/speech/audio/codeswitch_01.m4a",
+      "reference_raw": "Niko meeting lakini nitakupigia baadaye.",
+      "reference_normalised": "niko meeting lakini nitakupigia baadaye",
+      "models": {
+        "whisper-small": {
+          "model": "openai/whisper-small",
+          "hypothesis_raw": "Komiting, lakini entaku pigia badae.",
+          "hypothesis_normalised": "komiting lakini entaku pigia badae",
+          "wer": 1.0,
+          "cer": 0.25641,
+          "duration_seconds": 3.433,
+          "inference_time_ms": 462.323,
+          "device": "mps"
+        },
+        "sauti-v1": {
+          "model": "Finiflowlabs/sauti-asr-v1",
+          "hypothesis_raw": "niko miting, lakini nitakupigia baadae",
+          "hypothesis_normalised": "niko miting lakini nitakupigia baadae",
+          "wer": 0.4,
+          "cer": 0.076923,
+          "duration_seconds": 3.433,
+          "inference_time_ms": 1237.727,
+          "device": "mps"
+        }
+      },
+      "wer_improvement": 0.6,
+      "cer_improvement": 0.179487
+    },
+    {
+      "id": "numbers_01",
+      "category": "numbers",
+      "audio": "data/speech/audio/numbers_01.m4a",
+      "reference_raw": "Nina vitabu ishirini na tatu na kalamu tano.",
+      "reference_normalised": "nina vitabu ishirini na tatu na kalamu tano",
+      "models": {
+        "whisper-small": {
+          "model": "openai/whisper-small",
+          "hypothesis_raw": "Nina vitabu ishirini na tatu na kalamutano",
+          "hypothesis_normalised": "nina vitabu ishirini na tatu na kalamutano",
+          "wer": 0.25,
+          "cer": 0.023256,
+          "duration_seconds": 4.479,
+          "inference_time_ms": 476.722,
+          "device": "mps"
+        },
+        "sauti-v1": {
+          "model": "Finiflowlabs/sauti-asr-v1",
+          "hypothesis_raw": "nina vitabu ishirini na tatu na kalamu tano",
+          "hypothesis_normalised": "nina vitabu ishirini na tatu na kalamu tano",
+          "wer": 0.0,
+          "cer": 0.0,
+          "duration_seconds": 4.479,
+          "inference_time_ms": 1263.503,
+          "device": "mps"
+        }
+      },
+      "wer_improvement": 0.25,
+      "cer_improvement": 0.023256
+    },
+    {
+      "id": "standard_01",
+      "category": "standard",
+      "audio": "data/speech/audio/standard_01.m4a",
+      "reference_raw": "Ninafurahia kujifunza akili bandia na teknolojia ya lugha.",
+      "reference_normalised": "ninafurahia kujifunza akili bandia na teknolojia ya lugha",
+      "models": {
+        "whisper-small": {
+          "model": "openai/whisper-small",
+          "hypothesis_raw": "Ninofura hiya kujifunza akili bandia na teknologia ya luga",
+          "hypothesis_normalised": "ninofura hiya kujifunza akili bandia na teknologia ya luga",
+          "wer": 0.5,
+          "cer": 0.087719,
+          "duration_seconds": 5.119,
+          "inference_time_ms": 858.437,
+          "device": "mps"
+        },
+        "sauti-v1": {
+          "model": "Finiflowlabs/sauti-asr-v1",
+          "hypothesis_raw": "ninafurahi kujifunza akilibandia na teknolojia ya lugha",
+          "hypothesis_normalised": "ninafurahi kujifunza akilibandia na teknolojia ya lugha",
+          "wer": 0.375,
+          "cer": 0.035088,
+          "duration_seconds": 5.119,
+          "inference_time_ms": 2305.586,
+          "device": "mps"
+        }
+      },
+      "wer_improvement": 0.125,
+      "cer_improvement": 0.052631
+    }
+  ],
+  "wall_time_seconds": 189.063389,
+  "scientific_note": "This experiment compares two ASR systems on the same small LughaLab recording set. Differences are local diagnostic results and should not be interpreted as population-level Swahili ASR performance."
+}

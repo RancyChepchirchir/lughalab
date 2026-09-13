@@ -1,0 +1,783 @@
+{
+  "experiment": "LughaLab KSL Temporal Preprocessing Reconstruction",
+  "dataset": "joanwachuka/ksl-hand-landmarks",
+  "split": "data_split/data_split/test",
+  "sample_count": 124,
+  "target_frames": 64,
+  "raw_feature_dimension": 126,
+  "checkpoint_feature_dimension": 225,
+  "candidate_results": [
+    {
+      "method": "repeat_last_padding",
+      "correct": 123,
+      "total": 124,
+      "accuracy": 0.9919354838709677,
+      "mean_max_probability": 0.5561005987467305,
+      "per_class": {
+        "father": {
+          "correct": 30,
+          "total": 30,
+          "accuracy": 1.0
+        },
+        "hello": {
+          "correct": 30,
+          "total": 30,
+          "accuracy": 1.0
+        },
+        "is": {
+          "correct": 31,
+          "total": 32,
+          "accuracy": 0.96875
+        },
+        "my": {
+          "correct": 32,
+          "total": 32,
+          "accuracy": 1.0
+        }
+      },
+      "error_count": 1,
+      "errors": [
+        {
+          "file": "isr_3.npy",
+          "expected": "is",
+          "predicted": "my",
+          "probability": 0.5228934288024902,
+          "raw_frames": 29
+        }
+      ]
+    },
+    {
+      "method": "linear_interpolation",
+      "correct": 123,
+      "total": 124,
+      "accuracy": 0.9919354838709677,
+      "mean_max_probability": 0.5517348152014517,
+      "per_class": {
+        "father": {
+          "correct": 30,
+          "total": 30,
+          "accuracy": 1.0
+        },
+        "hello": {
+          "correct": 30,
+          "total": 30,
+          "accuracy": 1.0
+        },
+        "is": {
+          "correct": 31,
+          "total": 32,
+          "accuracy": 0.96875
+        },
+        "my": {
+          "correct": 32,
+          "total": 32,
+          "accuracy": 1.0
+        }
+      },
+      "error_count": 1,
+      "errors": [
+        {
+          "file": "isr_3.npy",
+          "expected": "is",
+          "predicted": "my",
+          "probability": 0.6290369033813477,
+          "raw_frames": 29
+        }
+      ]
+    },
+    {
+      "method": "floor_resample",
+      "correct": 123,
+      "total": 124,
+      "accuracy": 0.9919354838709677,
+      "mean_max_probability": 0.551468468000812,
+      "per_class": {
+        "father": {
+          "correct": 30,
+          "total": 30,
+          "accuracy": 1.0
+        },
+        "hello": {
+          "correct": 30,
+          "total": 30,
+          "accuracy": 1.0
+        },
+        "is": {
+          "correct": 31,
+          "total": 32,
+          "accuracy": 0.96875
+        },
+        "my": {
+          "correct": 32,
+          "total": 32,
+          "accuracy": 1.0
+        }
+      },
+      "error_count": 1,
+      "errors": [
+        {
+          "file": "isr_3.npy",
+          "expected": "is",
+          "predicted": "my",
+          "probability": 0.6642321348190308,
+          "raw_frames": 29
+        }
+      ]
+    },
+    {
+      "method": "nearest_resample",
+      "correct": 123,
+      "total": 124,
+      "accuracy": 0.9919354838709677,
+      "mean_max_probability": 0.5513080959358523,
+      "per_class": {
+        "father": {
+          "correct": 30,
+          "total": 30,
+          "accuracy": 1.0
+        },
+        "hello": {
+          "correct": 30,
+          "total": 30,
+          "accuracy": 1.0
+        },
+        "is": {
+          "correct": 31,
+          "total": 32,
+          "accuracy": 0.96875
+        },
+        "my": {
+          "correct": 32,
+          "total": 32,
+          "accuracy": 1.0
+        }
+      },
+      "error_count": 1,
+      "errors": [
+        {
+          "file": "isr_3.npy",
+          "expected": "is",
+          "predicted": "my",
+          "probability": 0.6443451046943665,
+          "raw_frames": 29
+        }
+      ]
+    },
+    {
+      "method": "zero_padding",
+      "correct": 41,
+      "total": 124,
+      "accuracy": 0.33064516129032256,
+      "mean_max_probability": 0.5367221762576411,
+      "per_class": {
+        "father": {
+          "correct": 0,
+          "total": 30,
+          "accuracy": 0.0
+        },
+        "hello": {
+          "correct": 30,
+          "total": 30,
+          "accuracy": 1.0
+        },
+        "is": {
+          "correct": 7,
+          "total": 32,
+          "accuracy": 0.21875
+        },
+        "my": {
+          "correct": 4,
+          "total": 32,
+          "accuracy": 0.125
+        }
+      },
+      "error_count": 83,
+      "errors": [
+        {
+          "file": "fatherr_10.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.5315110087394714,
+          "raw_frames": 33
+        },
+        {
+          "file": "fatherr_105.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.5531653761863708,
+          "raw_frames": 28
+        },
+        {
+          "file": "fatherr_108.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.4988153576850891,
+          "raw_frames": 30
+        },
+        {
+          "file": "fatherr_11.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.519854724407196,
+          "raw_frames": 34
+        },
+        {
+          "file": "fatherr_12.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.533168613910675,
+          "raw_frames": 34
+        },
+        {
+          "file": "fatherr_125.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.4724753499031067,
+          "raw_frames": 30
+        },
+        {
+          "file": "fatherr_139.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.528249204158783,
+          "raw_frames": 29
+        },
+        {
+          "file": "fatherr_144.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.44074949622154236,
+          "raw_frames": 30
+        },
+        {
+          "file": "fatherr_148.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.40575355291366577,
+          "raw_frames": 30
+        },
+        {
+          "file": "fatherr_154.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.3963903784751892,
+          "raw_frames": 30
+        },
+        {
+          "file": "fatherr_156.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.43982601165771484,
+          "raw_frames": 27
+        },
+        {
+          "file": "fatherr_159.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.3965883255004883,
+          "raw_frames": 30
+        },
+        {
+          "file": "fatherr_168.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.4230839014053345,
+          "raw_frames": 30
+        },
+        {
+          "file": "fatherr_17.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.5288786888122559,
+          "raw_frames": 30
+        },
+        {
+          "file": "fatherr_173.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.44271332025527954,
+          "raw_frames": 29
+        },
+        {
+          "file": "fatherr_177.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.48219236731529236,
+          "raw_frames": 27
+        },
+        {
+          "file": "fatherr_18.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.5644751787185669,
+          "raw_frames": 26
+        },
+        {
+          "file": "fatherr_187.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.4920338988304138,
+          "raw_frames": 30
+        },
+        {
+          "file": "fatherr_19.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.5719600319862366,
+          "raw_frames": 32
+        },
+        {
+          "file": "fatherr_190.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.5012199878692627,
+          "raw_frames": 30
+        },
+        {
+          "file": "fatherr_2.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.4934910833835602,
+          "raw_frames": 30
+        },
+        {
+          "file": "fatherr_21.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.5971055626869202,
+          "raw_frames": 33
+        },
+        {
+          "file": "fatherr_26.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.6033432483673096,
+          "raw_frames": 33
+        },
+        {
+          "file": "fatherr_46.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.5780478119850159,
+          "raw_frames": 24
+        },
+        {
+          "file": "fatherr_50.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.5389800667762756,
+          "raw_frames": 28
+        },
+        {
+          "file": "fatherr_59.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.5402224659919739,
+          "raw_frames": 27
+        },
+        {
+          "file": "fatherr_72.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.4629087448120117,
+          "raw_frames": 30
+        },
+        {
+          "file": "fatherr_83.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.49636611342430115,
+          "raw_frames": 30
+        },
+        {
+          "file": "fatherr_89.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.5441046357154846,
+          "raw_frames": 29
+        },
+        {
+          "file": "fatherr_96.npy",
+          "expected": "father",
+          "predicted": "hello",
+          "probability": 0.5185613036155701,
+          "raw_frames": 29
+        },
+        {
+          "file": "isr_100.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5470876097679138,
+          "raw_frames": 29
+        },
+        {
+          "file": "isr_106.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.574417233467102,
+          "raw_frames": 28
+        },
+        {
+          "file": "isr_108.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5646468997001648,
+          "raw_frames": 29
+        },
+        {
+          "file": "isr_112.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.588187038898468,
+          "raw_frames": 27
+        },
+        {
+          "file": "isr_129.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.6089425683021545,
+          "raw_frames": 28
+        },
+        {
+          "file": "isr_134.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5926251411437988,
+          "raw_frames": 28
+        },
+        {
+          "file": "isr_142.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5874242186546326,
+          "raw_frames": 28
+        },
+        {
+          "file": "isr_143.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.6045024394989014,
+          "raw_frames": 25
+        },
+        {
+          "file": "isr_144.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5775979161262512,
+          "raw_frames": 29
+        },
+        {
+          "file": "isr_154.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5611288547515869,
+          "raw_frames": 28
+        },
+        {
+          "file": "isr_157.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5528637170791626,
+          "raw_frames": 29
+        },
+        {
+          "file": "isr_166.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5709236860275269,
+          "raw_frames": 27
+        },
+        {
+          "file": "isr_167.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5504534840583801,
+          "raw_frames": 27
+        },
+        {
+          "file": "isr_171.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5747827291488647,
+          "raw_frames": 28
+        },
+        {
+          "file": "isr_19.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.45853590965270996,
+          "raw_frames": 27
+        },
+        {
+          "file": "isr_193.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5993767380714417,
+          "raw_frames": 26
+        },
+        {
+          "file": "isr_200.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5775999426841736,
+          "raw_frames": 26
+        },
+        {
+          "file": "isr_207.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5531640648841858,
+          "raw_frames": 29
+        },
+        {
+          "file": "isr_208.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5738840103149414,
+          "raw_frames": 26
+        },
+        {
+          "file": "isr_22.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.4314362406730652,
+          "raw_frames": 28
+        },
+        {
+          "file": "isr_4.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.466400146484375,
+          "raw_frames": 29
+        },
+        {
+          "file": "isr_54.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.43001866340637207,
+          "raw_frames": 28
+        },
+        {
+          "file": "isr_62.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.4439307749271393,
+          "raw_frames": 25
+        },
+        {
+          "file": "isr_66.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5125659108161926,
+          "raw_frames": 29
+        },
+        {
+          "file": "isr_97.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "probability": 0.5501090288162231,
+          "raw_frames": 29
+        },
+        {
+          "file": "myr_104.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.3978443145751953,
+          "raw_frames": 26
+        },
+        {
+          "file": "myr_106.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.43080663681030273,
+          "raw_frames": 27
+        },
+        {
+          "file": "myr_11.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.5809932351112366,
+          "raw_frames": 22
+        },
+        {
+          "file": "myr_115.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.4122471511363983,
+          "raw_frames": 25
+        },
+        {
+          "file": "myr_118.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.4077266454696655,
+          "raw_frames": 27
+        },
+        {
+          "file": "myr_121.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.4176557660102844,
+          "raw_frames": 25
+        },
+        {
+          "file": "myr_128.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.3310994803905487,
+          "raw_frames": 29
+        },
+        {
+          "file": "myr_134.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.6813225150108337,
+          "raw_frames": 23
+        },
+        {
+          "file": "myr_146.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.5482873320579529,
+          "raw_frames": 28
+        },
+        {
+          "file": "myr_155.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.6593859791755676,
+          "raw_frames": 28
+        },
+        {
+          "file": "myr_157.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.6530349850654602,
+          "raw_frames": 26
+        },
+        {
+          "file": "myr_163.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.4994785189628601,
+          "raw_frames": 41
+        },
+        {
+          "file": "myr_165.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.4825756549835205,
+          "raw_frames": 43
+        },
+        {
+          "file": "myr_167.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.4467391073703766,
+          "raw_frames": 43
+        },
+        {
+          "file": "myr_173.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.5328521728515625,
+          "raw_frames": 38
+        },
+        {
+          "file": "myr_175.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.528121829032898,
+          "raw_frames": 38
+        },
+        {
+          "file": "myr_2.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.4896758794784546,
+          "raw_frames": 27
+        },
+        {
+          "file": "myr_25.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.5390465259552002,
+          "raw_frames": 25
+        },
+        {
+          "file": "myr_31.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.5404766201972961,
+          "raw_frames": 24
+        },
+        {
+          "file": "myr_34.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.5560628771781921,
+          "raw_frames": 24
+        },
+        {
+          "file": "myr_35.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.5366464853286743,
+          "raw_frames": 26
+        },
+        {
+          "file": "myr_40.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.5343139171600342,
+          "raw_frames": 27
+        },
+        {
+          "file": "myr_51.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.4980217218399048,
+          "raw_frames": 23
+        },
+        {
+          "file": "myr_54.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.4157794117927551,
+          "raw_frames": 28
+        },
+        {
+          "file": "myr_69.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.45641589164733887,
+          "raw_frames": 28
+        },
+        {
+          "file": "myr_70.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.44931045174598694,
+          "raw_frames": 28
+        },
+        {
+          "file": "myr_78.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.47721341252326965,
+          "raw_frames": 26
+        },
+        {
+          "file": "myr_99.npy",
+          "expected": "my",
+          "predicted": "hello",
+          "probability": 0.3698942959308624,
+          "raw_frames": 24
+        }
+      ]
+    }
+  ],
+  "best_candidate": "repeat_last_padding",
+  "best_accuracy": 0.9919354838709677,
+  "interpretation": "Candidate temporal preprocessing methods are compared by their ability to reproduce checkpoint predictions on the clean original KSL test split. Matching the published accuracy would provide strong evidence, but not absolute proof, that the candidate matches the original training pipeline."
+}

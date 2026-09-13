@@ -1,0 +1,368 @@
+{
+  "experiment": "LughaLab semantic separation diagnostic",
+  "definition": {
+    "semantic_separation": "mean(similar) - mean(unrelated)",
+    "contrast_separation": "mean(similar) - mean(contrast)"
+  },
+  "models": {
+    "swahbert": {
+      "model": "pranaydeeps/SwahBERT-base-cased",
+      "similar_group": {
+        "categories": [
+          "code_switching",
+          "informal",
+          "paraphrase"
+        ],
+        "count": 6,
+        "mean_similarity": 0.770028
+      },
+      "related_group": {
+        "categories": [
+          "topical_similarity"
+        ],
+        "count": 2,
+        "mean_similarity": 0.644409
+      },
+      "contrast_group": {
+        "categories": [
+          "contrast"
+        ],
+        "count": 2,
+        "mean_similarity": 0.95094
+      },
+      "unrelated_group": {
+        "categories": [
+          "unrelated"
+        ],
+        "count": 2,
+        "mean_similarity": 0.569647
+      },
+      "semantic_separation": 0.20038,
+      "contrast_separation": -0.180912,
+      "category_summary": {
+        "code_switching": {
+          "count": 2,
+          "mean": 0.800772,
+          "median": 0.800772,
+          "minimum": 0.76057,
+          "maximum": 0.840974
+        },
+        "contrast": {
+          "count": 2,
+          "mean": 0.95094,
+          "median": 0.95094,
+          "minimum": 0.945844,
+          "maximum": 0.956036
+        },
+        "informal": {
+          "count": 2,
+          "mean": 0.822817,
+          "median": 0.822817,
+          "minimum": 0.766008,
+          "maximum": 0.879626
+        },
+        "paraphrase": {
+          "count": 2,
+          "mean": 0.686494,
+          "median": 0.686494,
+          "minimum": 0.681644,
+          "maximum": 0.691344
+        },
+        "topical_similarity": {
+          "count": 2,
+          "mean": 0.644409,
+          "median": 0.644409,
+          "minimum": 0.576117,
+          "maximum": 0.712701
+        },
+        "unrelated": {
+          "count": 2,
+          "mean": 0.569647,
+          "median": 0.569647,
+          "minimum": 0.475419,
+          "maximum": 0.663876
+        }
+      },
+      "pairs": [
+        {
+          "id": "para_01",
+          "category": "paraphrase",
+          "expected_relation": "similar",
+          "similarity": 0.691344,
+          "text_a": "Mtoto anasoma kitabu shuleni.",
+          "text_b": "Mwanafunzi anajifunza kwa kusoma kitabu."
+        },
+        {
+          "id": "para_02",
+          "category": "paraphrase",
+          "expected_relation": "similar",
+          "similarity": 0.681644,
+          "text_a": "Mama anapika chakula jikoni.",
+          "text_b": "Mama anatayarisha chakula ndani ya jikoni."
+        },
+        {
+          "id": "topic_01",
+          "category": "topical_similarity",
+          "expected_relation": "related",
+          "similarity": 0.712701,
+          "text_a": "Daktari anawatibu wagonjwa hospitalini.",
+          "text_b": "Muuguzi anafanya kazi katika hospitali."
+        },
+        {
+          "id": "topic_02",
+          "category": "topical_similarity",
+          "expected_relation": "related",
+          "similarity": 0.576117,
+          "text_a": "Wanafunzi wanasoma kwa ajili ya mtihani.",
+          "text_b": "Mwalimu anafundisha darasani."
+        },
+        {
+          "id": "unrel_01",
+          "category": "unrelated",
+          "expected_relation": "unrelated",
+          "similarity": 0.475419,
+          "text_a": "Mtoto anasoma kitabu shuleni.",
+          "text_b": "Mvua kubwa ilinyesha jana usiku."
+        },
+        {
+          "id": "unrel_02",
+          "category": "unrelated",
+          "expected_relation": "unrelated",
+          "similarity": 0.663876,
+          "text_a": "Samaki wanaogelea baharini.",
+          "text_b": "Kompyuta yangu imeharibika."
+        },
+        {
+          "id": "contrast_01",
+          "category": "contrast",
+          "expected_relation": "contrast",
+          "similarity": 0.945844,
+          "text_a": "Juma anapenda kahawa.",
+          "text_b": "Juma hapendi kahawa."
+        },
+        {
+          "id": "contrast_02",
+          "category": "contrast",
+          "expected_relation": "contrast",
+          "similarity": 0.956036,
+          "text_a": "Leo hali ya hewa ni nzuri.",
+          "text_b": "Leo hali ya hewa si nzuri."
+        },
+        {
+          "id": "informal_01",
+          "category": "informal",
+          "expected_relation": "similar",
+          "similarity": 0.766008,
+          "text_a": "Niko poa leo.",
+          "text_b": "Ninajisikia vizuri leo."
+        },
+        {
+          "id": "informal_02",
+          "category": "informal",
+          "expected_relation": "similar",
+          "similarity": 0.879626,
+          "text_a": "Tutaonana kesho basi.",
+          "text_b": "Tutakutana kesho."
+        },
+        {
+          "id": "codeswitch_01",
+          "category": "code_switching",
+          "expected_relation": "similar",
+          "similarity": 0.840974,
+          "text_a": "Niko meeting lakini nitakupigia baadaye.",
+          "text_b": "Niko kwenye mkutano, nitakupigia simu baadaye."
+        },
+        {
+          "id": "codeswitch_02",
+          "category": "code_switching",
+          "expected_relation": "similar",
+          "similarity": 0.76057,
+          "text_a": "Hii assignment ni ngumu sana.",
+          "text_b": "Kazi hii ya shule ni ngumu sana."
+        }
+      ]
+    },
+    "afroxlmr": {
+      "model": "Davlan/afro-xlmr-base",
+      "similar_group": {
+        "categories": [
+          "code_switching",
+          "informal",
+          "paraphrase"
+        ],
+        "count": 6,
+        "mean_similarity": 0.920879
+      },
+      "related_group": {
+        "categories": [
+          "topical_similarity"
+        ],
+        "count": 2,
+        "mean_similarity": 0.864599
+      },
+      "contrast_group": {
+        "categories": [
+          "contrast"
+        ],
+        "count": 2,
+        "mean_similarity": 0.94437
+      },
+      "unrelated_group": {
+        "categories": [
+          "unrelated"
+        ],
+        "count": 2,
+        "mean_similarity": 0.940735
+      },
+      "semantic_separation": -0.019856,
+      "contrast_separation": -0.023491,
+      "category_summary": {
+        "code_switching": {
+          "count": 2,
+          "mean": 0.972917,
+          "median": 0.972917,
+          "minimum": 0.964577,
+          "maximum": 0.981258
+        },
+        "contrast": {
+          "count": 2,
+          "mean": 0.94437,
+          "median": 0.94437,
+          "minimum": 0.892837,
+          "maximum": 0.995903
+        },
+        "informal": {
+          "count": 2,
+          "mean": 0.821793,
+          "median": 0.821793,
+          "minimum": 0.768288,
+          "maximum": 0.875298
+        },
+        "paraphrase": {
+          "count": 2,
+          "mean": 0.967927,
+          "median": 0.967927,
+          "minimum": 0.967697,
+          "maximum": 0.968156
+        },
+        "topical_similarity": {
+          "count": 2,
+          "mean": 0.864599,
+          "median": 0.864599,
+          "minimum": 0.775714,
+          "maximum": 0.953485
+        },
+        "unrelated": {
+          "count": 2,
+          "mean": 0.940735,
+          "median": 0.940735,
+          "minimum": 0.915511,
+          "maximum": 0.96596
+        }
+      },
+      "pairs": [
+        {
+          "id": "para_01",
+          "category": "paraphrase",
+          "expected_relation": "similar",
+          "similarity": 0.967697,
+          "text_a": "Mtoto anasoma kitabu shuleni.",
+          "text_b": "Mwanafunzi anajifunza kwa kusoma kitabu."
+        },
+        {
+          "id": "para_02",
+          "category": "paraphrase",
+          "expected_relation": "similar",
+          "similarity": 0.968156,
+          "text_a": "Mama anapika chakula jikoni.",
+          "text_b": "Mama anatayarisha chakula ndani ya jikoni."
+        },
+        {
+          "id": "topic_01",
+          "category": "topical_similarity",
+          "expected_relation": "related",
+          "similarity": 0.953485,
+          "text_a": "Daktari anawatibu wagonjwa hospitalini.",
+          "text_b": "Muuguzi anafanya kazi katika hospitali."
+        },
+        {
+          "id": "topic_02",
+          "category": "topical_similarity",
+          "expected_relation": "related",
+          "similarity": 0.775714,
+          "text_a": "Wanafunzi wanasoma kwa ajili ya mtihani.",
+          "text_b": "Mwalimu anafundisha darasani."
+        },
+        {
+          "id": "unrel_01",
+          "category": "unrelated",
+          "expected_relation": "unrelated",
+          "similarity": 0.96596,
+          "text_a": "Mtoto anasoma kitabu shuleni.",
+          "text_b": "Mvua kubwa ilinyesha jana usiku."
+        },
+        {
+          "id": "unrel_02",
+          "category": "unrelated",
+          "expected_relation": "unrelated",
+          "similarity": 0.915511,
+          "text_a": "Samaki wanaogelea baharini.",
+          "text_b": "Kompyuta yangu imeharibika."
+        },
+        {
+          "id": "contrast_01",
+          "category": "contrast",
+          "expected_relation": "contrast",
+          "similarity": 0.892837,
+          "text_a": "Juma anapenda kahawa.",
+          "text_b": "Juma hapendi kahawa."
+        },
+        {
+          "id": "contrast_02",
+          "category": "contrast",
+          "expected_relation": "contrast",
+          "similarity": 0.995903,
+          "text_a": "Leo hali ya hewa ni nzuri.",
+          "text_b": "Leo hali ya hewa si nzuri."
+        },
+        {
+          "id": "informal_01",
+          "category": "informal",
+          "expected_relation": "similar",
+          "similarity": 0.768288,
+          "text_a": "Niko poa leo.",
+          "text_b": "Ninajisikia vizuri leo."
+        },
+        {
+          "id": "informal_02",
+          "category": "informal",
+          "expected_relation": "similar",
+          "similarity": 0.875298,
+          "text_a": "Tutaonana kesho basi.",
+          "text_b": "Tutakutana kesho."
+        },
+        {
+          "id": "codeswitch_01",
+          "category": "code_switching",
+          "expected_relation": "similar",
+          "similarity": 0.981258,
+          "text_a": "Niko meeting lakini nitakupigia baadaye.",
+          "text_b": "Niko kwenye mkutano, nitakupigia simu baadaye."
+        },
+        {
+          "id": "codeswitch_02",
+          "category": "code_switching",
+          "expected_relation": "similar",
+          "similarity": 0.964577,
+          "text_a": "Hii assignment ni ngumu sana.",
+          "text_b": "Kazi hii ya shule ni ngumu sana."
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "semantic_separation_gap": 0.220236,
+    "contrast_separation_gap": -0.157421
+  },
+  "scientific_note": "This experiment measures relative separation in the embedding space. It does not constitute a validated semantic textual similarity benchmark."
+}

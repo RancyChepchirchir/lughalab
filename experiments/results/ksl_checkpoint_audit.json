@@ -1,0 +1,245 @@
+{
+  "repository": "luciayen/afrisign-exp1-ksl-baseline",
+  "checkpoint_file": "pytorch_model.bin",
+  "checkpoint_path": "/Users/rancychepchirchir/.cache/huggingface/hub/models--luciayen--afrisign-exp1-ksl-baseline/snapshots/5164024b986c69ebef9abb89da51d31973ec847c/pytorch_model.bin",
+  "epoch": 2,
+  "validation_accuracy": 1.0,
+  "label_to_index": {
+    "father": 0,
+    "hello": 1,
+    "is": 2,
+    "my": 3
+  },
+  "index_to_label": {
+    "0": "father",
+    "1": "hello",
+    "2": "is",
+    "3": "my"
+  },
+  "number_of_classes": 4,
+  "mean": {
+    "shape": [
+      225
+    ],
+    "dtype": "float32",
+    "min": -0.015112720429897308,
+    "max": 0.7466784119606018,
+    "mean": 0.10300235450267792,
+    "std": 0.21731166541576385,
+    "finite": true
+  },
+  "std": {
+    "shape": [
+      225
+    ],
+    "dtype": "float32",
+    "min": 0.0003619787166826427,
+    "max": 1.0,
+    "mean": 0.4821833074092865,
+    "std": 0.4686647951602936,
+    "finite": true
+  },
+  "zero_mean_feature_count": 100,
+  "zero_std_feature_count": 0,
+  "model_state_shapes": {
+    "cls": [
+      1,
+      1,
+      256
+    ],
+    "proj.weight": [
+      256,
+      225
+    ],
+    "proj.bias": [
+      256
+    ],
+    "pos.weight": [
+      65,
+      256
+    ],
+    "enc.layers.0.self_attn.in_proj_weight": [
+      768,
+      256
+    ],
+    "enc.layers.0.self_attn.in_proj_bias": [
+      768
+    ],
+    "enc.layers.0.self_attn.out_proj.weight": [
+      256,
+      256
+    ],
+    "enc.layers.0.self_attn.out_proj.bias": [
+      256
+    ],
+    "enc.layers.0.linear1.weight": [
+      1024,
+      256
+    ],
+    "enc.layers.0.linear1.bias": [
+      1024
+    ],
+    "enc.layers.0.linear2.weight": [
+      256,
+      1024
+    ],
+    "enc.layers.0.linear2.bias": [
+      256
+    ],
+    "enc.layers.0.norm1.weight": [
+      256
+    ],
+    "enc.layers.0.norm1.bias": [
+      256
+    ],
+    "enc.layers.0.norm2.weight": [
+      256
+    ],
+    "enc.layers.0.norm2.bias": [
+      256
+    ],
+    "enc.layers.1.self_attn.in_proj_weight": [
+      768,
+      256
+    ],
+    "enc.layers.1.self_attn.in_proj_bias": [
+      768
+    ],
+    "enc.layers.1.self_attn.out_proj.weight": [
+      256,
+      256
+    ],
+    "enc.layers.1.self_attn.out_proj.bias": [
+      256
+    ],
+    "enc.layers.1.linear1.weight": [
+      1024,
+      256
+    ],
+    "enc.layers.1.linear1.bias": [
+      1024
+    ],
+    "enc.layers.1.linear2.weight": [
+      256,
+      1024
+    ],
+    "enc.layers.1.linear2.bias": [
+      256
+    ],
+    "enc.layers.1.norm1.weight": [
+      256
+    ],
+    "enc.layers.1.norm1.bias": [
+      256
+    ],
+    "enc.layers.1.norm2.weight": [
+      256
+    ],
+    "enc.layers.1.norm2.bias": [
+      256
+    ],
+    "enc.layers.2.self_attn.in_proj_weight": [
+      768,
+      256
+    ],
+    "enc.layers.2.self_attn.in_proj_bias": [
+      768
+    ],
+    "enc.layers.2.self_attn.out_proj.weight": [
+      256,
+      256
+    ],
+    "enc.layers.2.self_attn.out_proj.bias": [
+      256
+    ],
+    "enc.layers.2.linear1.weight": [
+      1024,
+      256
+    ],
+    "enc.layers.2.linear1.bias": [
+      1024
+    ],
+    "enc.layers.2.linear2.weight": [
+      256,
+      1024
+    ],
+    "enc.layers.2.linear2.bias": [
+      256
+    ],
+    "enc.layers.2.norm1.weight": [
+      256
+    ],
+    "enc.layers.2.norm1.bias": [
+      256
+    ],
+    "enc.layers.2.norm2.weight": [
+      256
+    ],
+    "enc.layers.2.norm2.bias": [
+      256
+    ],
+    "enc.layers.3.self_attn.in_proj_weight": [
+      768,
+      256
+    ],
+    "enc.layers.3.self_attn.in_proj_bias": [
+      768
+    ],
+    "enc.layers.3.self_attn.out_proj.weight": [
+      256,
+      256
+    ],
+    "enc.layers.3.self_attn.out_proj.bias": [
+      256
+    ],
+    "enc.layers.3.linear1.weight": [
+      1024,
+      256
+    ],
+    "enc.layers.3.linear1.bias": [
+      1024
+    ],
+    "enc.layers.3.linear2.weight": [
+      256,
+      1024
+    ],
+    "enc.layers.3.linear2.bias": [
+      256
+    ],
+    "enc.layers.3.norm1.weight": [
+      256
+    ],
+    "enc.layers.3.norm1.bias": [
+      256
+    ],
+    "enc.layers.3.norm2.weight": [
+      256
+    ],
+    "enc.layers.3.norm2.bias": [
+      256
+    ],
+    "norm.weight": [
+      256
+    ],
+    "norm.bias": [
+      256
+    ],
+    "head.weight": [
+      4,
+      256
+    ],
+    "head.bias": [
+      4
+    ]
+  },
+  "architecture_inference": {
+    "input_dimension": 225,
+    "embedding_dimension": 256,
+    "sequence_positions": 65,
+    "transformer_layers": 4,
+    "feedforward_dimension": 1024,
+    "number_of_classes": 4,
+    "uses_cls_token": true
+  },
+  "compatibility_note": "The checkpoint was trained on hands-only KSL landmarks. Its first 126 features contain 42 hand landmarks x 3 coordinates, while features 126:225 are zero padding. This differs from the native LughaLab ordering of pose + left hand + right hand."
+}

@@ -1,0 +1,164 @@
+{
+  "experiment": "KSL forward architecture sensitivity audit",
+  "temporal_method": "linear_interpolation",
+  "results": [
+    {
+      "activation": "relu",
+      "norm_first": false,
+      "correct": 123,
+      "total": 124,
+      "accuracy": 0.9919354838709677,
+      "mean_max_probability": 0.5517348243344214,
+      "errors": [
+        {
+          "file": "isr_3.npy",
+          "expected": "is",
+          "predicted": "my",
+          "confidence": 0.6290369629859924,
+          "frames": 29,
+          "probabilities": {
+            "father": 0.14594127237796783,
+            "hello": 0.058599501848220825,
+            "is": 0.16642224788665771,
+            "my": 0.6290369629859924
+          }
+        }
+      ]
+    },
+    {
+      "activation": "relu",
+      "norm_first": true,
+      "correct": 123,
+      "total": 124,
+      "accuracy": 0.9919354838709677,
+      "mean_max_probability": 0.5110523395480648,
+      "errors": [
+        {
+          "file": "isr_3.npy",
+          "expected": "is",
+          "predicted": "my",
+          "confidence": 0.3896532952785492,
+          "frames": 29,
+          "probabilities": {
+            "father": 0.1613142341375351,
+            "hello": 0.09928149729967117,
+            "is": 0.34975099563598633,
+            "my": 0.3896532952785492
+          }
+        }
+      ]
+    },
+    {
+      "activation": "gelu",
+      "norm_first": false,
+      "correct": 121,
+      "total": 124,
+      "accuracy": 0.9758064516129032,
+      "mean_max_probability": 0.5363021567463875,
+      "errors": [
+        {
+          "file": "fatherr_156.npy",
+          "expected": "father",
+          "predicted": "my",
+          "confidence": 0.4002537727355957,
+          "frames": 27,
+          "probabilities": {
+            "father": 0.38061192631721497,
+            "hello": 0.065032459795475,
+            "is": 0.1541019231081009,
+            "my": 0.4002537727355957
+          }
+        },
+        {
+          "file": "isr_129.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "confidence": 0.36969971656799316,
+          "frames": 28,
+          "probabilities": {
+            "father": 0.14418691396713257,
+            "hello": 0.36969971656799316,
+            "is": 0.35900866985321045,
+            "my": 0.12710465490818024
+          }
+        },
+        {
+          "file": "isr_3.npy",
+          "expected": "is",
+          "predicted": "my",
+          "confidence": 0.649488091468811,
+          "frames": 29,
+          "probabilities": {
+            "father": 0.12107479572296143,
+            "hello": 0.06458091735839844,
+            "is": 0.1648562103509903,
+            "my": 0.649488091468811
+          }
+        }
+      ]
+    },
+    {
+      "activation": "gelu",
+      "norm_first": true,
+      "correct": 120,
+      "total": 124,
+      "accuracy": 0.967741935483871,
+      "mean_max_probability": 0.4934560223933189,
+      "errors": [
+        {
+          "file": "fatherr_154.npy",
+          "expected": "father",
+          "predicted": "my",
+          "confidence": 0.3763860762119293,
+          "frames": 30,
+          "probabilities": {
+            "father": 0.3739686608314514,
+            "hello": 0.08319871872663498,
+            "is": 0.1664465367794037,
+            "my": 0.3763860762119293
+          }
+        },
+        {
+          "file": "fatherr_156.npy",
+          "expected": "father",
+          "predicted": "my",
+          "confidence": 0.3891783356666565,
+          "frames": 27,
+          "probabilities": {
+            "father": 0.3565220534801483,
+            "hello": 0.0839700773358345,
+            "is": 0.1703295260667801,
+            "my": 0.3891783356666565
+          }
+        },
+        {
+          "file": "isr_129.npy",
+          "expected": "is",
+          "predicted": "hello",
+          "confidence": 0.36641114950180054,
+          "frames": 28,
+          "probabilities": {
+            "father": 0.14944687485694885,
+            "hello": 0.36641114950180054,
+            "is": 0.3446004092693329,
+            "my": 0.1395416259765625
+          }
+        },
+        {
+          "file": "isr_3.npy",
+          "expected": "is",
+          "predicted": "my",
+          "confidence": 0.40117335319519043,
+          "frames": 29,
+          "probabilities": {
+            "father": 0.14767251908779144,
+            "hello": 0.11630860716104507,
+            "is": 0.33484551310539246,
+            "my": 0.40117335319519043
+          }
+        }
+      ]
+    }
+  ],
+  "note": "Strict state-dict compatibility does not establish non-parameter forward choices such as activation or pre/post LayerNorm. These are tested empirically."
+}

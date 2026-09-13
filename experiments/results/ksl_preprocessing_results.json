@@ -1,0 +1,40 @@
+{
+  "experiment": "LughaLab KSL Preprocessing v1",
+  "target_shape": [
+    64,
+    225
+  ],
+  "records": [
+    {
+      "video": "landmark_test_01.mp4",
+      "frames_read": 219,
+      "hand_detection_rate": 0.031963,
+      "original_shape": [
+        219,
+        225
+      ],
+      "output_shape": [
+        64,
+        225
+      ],
+      "missingness_before": {
+        "pose_missing_rate": 0.538813,
+        "left_hand_missing_rate": 0.977169,
+        "right_hand_missing_rate": 0.986301
+      },
+      "missingness_after": {
+        "pose_missing_rate": 0.421875,
+        "left_hand_missing_rate": 0.953125,
+        "right_hand_missing_rate": 0.953125
+      },
+      "geometry": {
+        "frames": 219,
+        "geometry_normalised_frames": 101,
+        "geometry_fallback_frames": 118,
+        "mean_scale": 0.566568
+      },
+      "saved_landmarks": "data/ksl/landmarks/landmark_test_01_64x225.npy"
+    }
+  ],
+  "scientific_note": "The videos used at this stage validate the landmark preprocessing pipeline only. They must not be treated as labelled Kenyan Sign Language observations unless their linguistic provenance has been independently established."
+}
