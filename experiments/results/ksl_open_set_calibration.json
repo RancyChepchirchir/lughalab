@@ -1,0 +1,50 @@
+{
+  "detector": "5-NN mean L2 distance",
+  "k": 5,
+  "training_reference_size": 572,
+  "held_out_id_size": 124,
+  "natural_ood_size": 32,
+  "id_score_mean": 1.1206737883829654,
+  "natural_ood_score_mean": 10.339771140982226,
+  "max_id_score": 7.417359126989058,
+  "min_natural_ood_score": 7.374294877881236,
+  "extreme_margin": -0.043064249107821695,
+  "thresholds": [
+    {
+      "id_quantile": 90.0,
+      "threshold": 2.3672952228757835,
+      "id_acceptance_rate": 0.8951612903225806,
+      "id_rejection_rate": 0.10483870967741936,
+      "natural_ood_rejection_rate": 1.0,
+      "id_rejected_count": 13,
+      "natural_ood_rejected_count": 32
+    },
+    {
+      "id_quantile": 95.0,
+      "threshold": 3.1066579328944335,
+      "id_acceptance_rate": 0.9435483870967742,
+      "id_rejection_rate": 0.056451612903225805,
+      "natural_ood_rejection_rate": 1.0,
+      "id_rejected_count": 7,
+      "natural_ood_rejected_count": 32
+    },
+    {
+      "id_quantile": 97.5,
+      "threshold": 3.891430565043158,
+      "id_acceptance_rate": 0.967741935483871,
+      "id_rejection_rate": 0.03225806451612903,
+      "natural_ood_rejection_rate": 1.0,
+      "id_rejected_count": 4,
+      "natural_ood_rejected_count": 32
+    },
+    {
+      "id_quantile": 99.0,
+      "threshold": 5.489576841412576,
+      "id_acceptance_rate": 0.9838709677419355,
+      "id_rejection_rate": 0.016129032258064516,
+      "natural_ood_rejection_rate": 1.0,
+      "id_rejected_count": 2,
+      "natural_ood_rejected_count": 32
+    }
+  ]
+}

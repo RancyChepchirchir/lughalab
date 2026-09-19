@@ -296,3 +296,66 @@ def classify_checkpoint_sequence(
             "gloss."
         ),
     }
+
+def extract_checkpoint_embedding(
+    sequence: np.ndarray,
+) -> np.ndarray:
+    """
+    Extract the normalized 256-dimensional CLS
+    representation from the reconstructed KSL
+    Transformer.
+
+    The input must already be checkpoint-ready:
+        shape = (64, 225)
+        checkpoint z-score already applied.
+    """
+    bundle = (
+        load_ksl_classifier()
+    )
+
+    sequence = np.asarray(
+        sequence,
+        dtype=np.float32,
+    )
+
+    if sequence.shape != (
+        64,
+        225,
+    ):
+        raise ValueError(
+            "Expected checkpoint-ready "
+            "sequence with shape "
+            f"(64, 225), got "
+            f"{sequence.shape}."
+        )
+
+    if not np.isfinite(
+        sequence
+    ).all():
+        raise ValueError(
+            "Sequence contains NaN "
+            "or infinite values."
+        )
+
+    tensor = (
+        torch.from_numpy(
+            sequence
+        )
+        .unsqueeze(0)
+        .to(
+            bundle["device"]
+        )
+    )
+
+    with torch.inference_mode():
+        embedding = (
+            bundle["model"]
+            .encode(tensor)
+            .squeeze(0)
+            .detach()
+            .cpu()
+            .numpy()
+            .astype(np.float32)
+        )
+
+    return embedding

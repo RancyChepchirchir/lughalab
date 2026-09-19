@@ -221,6 +221,95 @@ def temporal_resample(
 
     return output
 
+def temporal_repeat_last_padding(
+    sequence: np.ndarray,
+    target_length: int = TARGET_LENGTH,
+) -> np.ndarray:
+    """
+    Reconstruct the temporal preprocessing selected by
+    LughaLab's checkpoint audit.
+
+    Behaviour:
+      - T == target_length:
+            return unchanged
+      - T < target_length:
+            repeat the final observed frame
+      - T > target_length:
+            uniformly downsample to target_length
+
+    The repeat-last strategy reproduced 123/124 held-out
+    predictions in the LughaLab reconstruction experiment
+    and produced the strongest mean maximum probability
+    among the tested candidate preprocessing strategies.
+
+    This remains a reconstruction of the public checkpoint
+    pipeline, not proof of the original training code.
+    """
+
+    sequence = np.asarray(
+        sequence,
+        dtype=np.float32,
+    )
+
+    if sequence.ndim != 2:
+        raise ValueError(
+            "Expected temporal sequence with shape (T, D)."
+        )
+
+    source_length = sequence.shape[0]
+
+    if source_length == 0:
+        raise ValueError(
+            "Cannot temporally prepare an empty sequence."
+        )
+
+    if source_length == target_length:
+        return sequence.astype(
+            np.float32,
+            copy=True,
+        )
+
+    if source_length < target_length:
+        padding_length = (
+            target_length - source_length
+        )
+
+        last_frame = sequence[-1:]
+
+        padding = np.repeat(
+            last_frame,
+            padding_length,
+            axis=0,
+        )
+
+        return np.concatenate(
+            [
+                sequence,
+                padding,
+            ],
+            axis=0,
+        ).astype(
+            np.float32
+        )
+
+    indices = np.linspace(
+        0,
+        source_length - 1,
+        target_length,
+    )
+
+    indices = np.rint(
+        indices
+    ).astype(
+        np.int64
+    )
+
+    return sequence[
+        indices
+    ].astype(
+        np.float32
+    )
+
 
 def apply_checkpoint_zscore(
     sequence: np.ndarray,
@@ -325,8 +414,8 @@ def prepare_for_legacy_checkpoint(
         )
     )
 
-    resampled = (
-        temporal_resample(
+    temporal = (
+        temporal_repeat_last_padding(
             padded,
             target_length=TARGET_LENGTH,
         )
@@ -334,7 +423,7 @@ def prepare_for_legacy_checkpoint(
 
     standardized = (
         apply_checkpoint_zscore(
-            resampled,
+            temporal,
             mean=mean,
             std=std,
         )
@@ -374,16 +463,22 @@ def prepare_for_legacy_checkpoint(
         "zero_padding_nonzero_count": (
             nonzero_tail
         ),
-        "note": (
-            "Compatibility representation "
-            "uses left + right hand landmarks "
-            "in the first 126 dimensions and "
-            "99 trailing zeros before applying "
-            "checkpoint z-score statistics. "
-            "Temporal linear resampling is a "
-            "diagnostic approximation because "
-            "the public model card does not "
-            "establish exact equivalence with "
-            "the original temporal preprocessing."
+        "temporal_strategy": (
+            "repeat_last_padding"
         ),
+        "note": (
+        "Compatibility representation "
+        "uses left + right hand landmarks "
+        "in the first 126 dimensions and "
+        "99 trailing zeros before applying "
+        "checkpoint z-score statistics. "
+        "Sequences shorter than 64 frames "
+        "use repeat-last padding. Longer "
+        "sequences are uniformly downsampled. "
+        "This temporal strategy was selected "
+        "through LughaLab checkpoint "
+        "reconstruction experiments and is "
+        "not claimed to reproduce unpublished "
+        "original training code exactly."
+    ),
     }

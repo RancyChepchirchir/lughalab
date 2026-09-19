@@ -74,11 +74,17 @@ class LandmarkTransformer(nn.Module):
             num_classes,
         )
 
-    def forward(
+    def encode(
         self,
         x: torch.Tensor,
     ) -> torch.Tensor:
+        """
+        Return the normalized CLS representation before
+        the four-class classification head.
 
+        Output:
+            (batch, d_model)
+        """
         if x.ndim != 3:
             raise ValueError(
                 "Expected input shape "
@@ -140,10 +146,19 @@ class LandmarkTransformer(nn.Module):
             0,
         ]
 
-        cls_output = self.norm(
+        return self.norm(
             cls_output
         )
 
+
+    def forward(
+        self,
+        x: torch.Tensor,
+    ) -> torch.Tensor:
+        embedding = self.encode(
+            x
+        )
+
         return self.head(
-            cls_output
+            embedding
         )
