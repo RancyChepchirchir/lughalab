@@ -27,3 +27,13 @@ data/ksl/natural_ood/
 # Temporary / backup files
 *.bak
 *.tmp
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
