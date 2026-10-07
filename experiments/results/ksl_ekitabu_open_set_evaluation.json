@@ -1,0 +1,350 @@
+{
+  "protocol": {
+    "reference_samples": 987,
+    "validation_samples": 200,
+    "known_test_samples": 300,
+    "unknown_test_samples": 150,
+    "known_classes": [
+      "Agreement",
+      "Apple",
+      "Colour",
+      "Friend",
+      "Gift",
+      "Market",
+      "No_125",
+      "No_17",
+      "No_268",
+      "No_35",
+      "No_388",
+      "No_48",
+      "No_54",
+      "No_66",
+      "Picture",
+      "Proud",
+      "Sweater",
+      "Teach",
+      "Tortoise",
+      "Twin"
+    ],
+    "unknown_classes": [
+      "Monday",
+      "No_100",
+      "No_22",
+      "No_444",
+      "No_73",
+      "No_89",
+      "No_9",
+      "No_91",
+      "Tomatoes",
+      "Ugali"
+    ],
+    "reference_signers": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ],
+    "validation_signers": [
+      "11",
+      "12"
+    ],
+    "test_signers": [
+      "13",
+      "14",
+      "15"
+    ]
+  },
+  "detectors": {
+    "1": {
+      "auroc": 0.4833777777777778,
+      "auroc_ci_95": [
+        0.42141055555555557,
+        0.541711111111111
+      ],
+      "aupr": 0.3752195545168445,
+      "fpr95": 0.96,
+      "known_mean": 6.313092231750488,
+      "known_median": 5.105708599090576,
+      "known_min": 2.310326337814331,
+      "known_max": 13.223152160644531,
+      "unknown_mean": 6.557837963104248,
+      "unknown_median": 4.763453483581543,
+      "unknown_min": 2.7538559436798096,
+      "unknown_max": 13.540824890136719
+    },
+    "3": {
+      "auroc": 0.48475555555555555,
+      "auroc_ci_95": [
+        0.4233772222222223,
+        0.5430461111111111
+      ],
+      "aupr": 0.39123685597111607,
+      "fpr95": 0.9466666666666667,
+      "known_mean": 6.595532417297363,
+      "known_median": 5.37347936630249,
+      "known_min": 2.5786473751068115,
+      "known_max": 13.505763053894043,
+      "unknown_mean": 6.859978199005127,
+      "unknown_median": 4.930082321166992,
+      "unknown_min": 2.9257280826568604,
+      "unknown_max": 13.76791000366211
+    },
+    "5": {
+      "auroc": 0.4855333333333334,
+      "auroc_ci_95": [
+        0.42402111111111107,
+        0.5444011111111111
+      ],
+      "aupr": 0.3916985885776851,
+      "fpr95": 0.9433333333333334,
+      "known_mean": 6.776724338531494,
+      "known_median": 5.607422828674316,
+      "known_min": 2.703679323196411,
+      "known_max": 13.687512397766113,
+      "unknown_mean": 7.0324387550354,
+      "unknown_median": 5.037588119506836,
+      "unknown_min": 3.06003475189209,
+      "unknown_max": 13.938873291015625
+    },
+    "10": {
+      "auroc": 0.48706666666666665,
+      "auroc_ci_95": [
+        0.4259533333333333,
+        0.5454294444444444
+      ],
+      "aupr": 0.3944792759897609,
+      "fpr95": 0.9433333333333334,
+      "known_mean": 7.063783168792725,
+      "known_median": 5.922196388244629,
+      "known_min": 2.9430463314056396,
+      "known_max": 13.950027465820312,
+      "unknown_mean": 7.29237699508667,
+      "unknown_median": 5.249236106872559,
+      "unknown_min": 3.2583980560302734,
+      "unknown_max": 14.194221496582031
+    },
+    "20": {
+      "auroc": 0.4884666666666667,
+      "auroc_ci_95": [
+        0.42677722222222225,
+        0.5467183333333333
+      ],
+      "aupr": 0.3914780237560419,
+      "fpr95": 0.9433333333333334,
+      "known_mean": 7.394505023956299,
+      "known_median": 6.2795515060424805,
+      "known_min": 3.171659469604492,
+      "known_max": 14.236656188964844,
+      "unknown_mean": 7.601618766784668,
+      "unknown_median": 5.506826400756836,
+      "unknown_min": 3.4892642498016357,
+      "unknown_max": 14.540339469909668
+    }
+  },
+  "operating_points": {
+    "0.9": {
+      "threshold": 13.050710678100586,
+      "validation_acceptance": 0.9,
+      "known_test_acceptance": 0.96,
+      "known_test_rejection": 0.040000000000000036,
+      "unknown_test_rejection": 0.08
+    },
+    "0.95": {
+      "threshold": 13.58622932434082,
+      "validation_acceptance": 0.95,
+      "known_test_acceptance": 0.9933333333333333,
+      "known_test_rejection": 0.00666666666666671,
+      "unknown_test_rejection": 0.06
+    },
+    "0.975": {
+      "threshold": 13.901002883911133,
+      "validation_acceptance": 0.975,
+      "known_test_acceptance": 1.0,
+      "known_test_rejection": 0.0,
+      "unknown_test_rejection": 0.013333333333333334
+    },
+    "0.99": {
+      "threshold": 14.888178825378418,
+      "validation_acceptance": 0.99,
+      "known_test_acceptance": 1.0,
+      "known_test_rejection": 0.0,
+      "unknown_test_rejection": 0.0
+    }
+  },
+  "per_unknown_gloss": {
+    "Monday": {
+      "n": 15,
+      "mean": 7.830873012542725,
+      "median": 5.892895698547363,
+      "min": 3.6487655639648438,
+      "max": 13.895898818969727,
+      "rejection_at_val95": 0.2,
+      "mean_max_softmax": 0.6469311118125916,
+      "mean_detection_rate": 0.8439072966575623
+    },
+    "No_100": {
+      "n": 15,
+      "mean": 7.471412658691406,
+      "median": 5.34359073638916,
+      "min": 4.277121543884277,
+      "max": 13.889480590820312,
+      "rejection_at_val95": 0.06666666666666667,
+      "mean_max_softmax": 0.655884325504303,
+      "mean_detection_rate": 0.7587564587593079
+    },
+    "No_22": {
+      "n": 15,
+      "mean": 6.467379570007324,
+      "median": 4.227290153503418,
+      "min": 3.1804773807525635,
+      "max": 12.624532699584961,
+      "rejection_at_val95": 0.0,
+      "mean_max_softmax": 0.7102485299110413,
+      "mean_detection_rate": 0.7846013307571411
+    },
+    "No_444": {
+      "n": 15,
+      "mean": 7.083615303039551,
+      "median": 4.124288082122803,
+      "min": 3.06003475189209,
+      "max": 13.938873291015625,
+      "rejection_at_val95": 0.2,
+      "mean_max_softmax": 0.6993110775947571,
+      "mean_detection_rate": 0.7989184260368347
+    },
+    "No_73": {
+      "n": 15,
+      "mean": 6.631449222564697,
+      "median": 4.629584312438965,
+      "min": 3.167734146118164,
+      "max": 12.832193374633789,
+      "rejection_at_val95": 0.0,
+      "mean_max_softmax": 0.7233375906944275,
+      "mean_detection_rate": 0.8200210928916931
+    },
+    "No_89": {
+      "n": 15,
+      "mean": 7.060522079467773,
+      "median": 4.799160957336426,
+      "min": 3.9875388145446777,
+      "max": 12.43284797668457,
+      "rejection_at_val95": 0.0,
+      "mean_max_softmax": 0.7361831665039062,
+      "mean_detection_rate": 0.8076362013816833
+    },
+    "No_9": {
+      "n": 15,
+      "mean": 7.449594497680664,
+      "median": 5.107446670532227,
+      "min": 3.3287322521209717,
+      "max": 13.935239791870117,
+      "rejection_at_val95": 0.13333333333333333,
+      "mean_max_softmax": 0.716706395149231,
+      "mean_detection_rate": 0.7795237898826599
+    },
+    "No_91": {
+      "n": 15,
+      "mean": 6.5321149826049805,
+      "median": 4.2462663650512695,
+      "min": 3.4683852195739746,
+      "max": 12.56976318359375,
+      "rejection_at_val95": 0.0,
+      "mean_max_softmax": 0.7369415163993835,
+      "mean_detection_rate": 0.8172723054885864
+    },
+    "Tomatoes": {
+      "n": 15,
+      "mean": 6.783250331878662,
+      "median": 5.867105007171631,
+      "min": 3.3328635692596436,
+      "max": 10.970918655395508,
+      "rejection_at_val95": 0.0,
+      "mean_max_softmax": 0.6889329552650452,
+      "mean_detection_rate": 0.8348945379257202
+    },
+    "Ugali": {
+      "n": 15,
+      "mean": 7.014173984527588,
+      "median": 6.4552459716796875,
+      "min": 3.1433768272399902,
+      "max": 11.159239768981934,
+      "rejection_at_val95": 0.0,
+      "mean_max_softmax": 0.660178005695343,
+      "mean_detection_rate": 0.8213929533958435
+    }
+  },
+  "per_test_signer": {
+    "13": {
+      "auroc": 0.6796,
+      "auroc_ci_95": [
+        0.5906,
+        0.756805
+      ],
+      "aupr": 0.5427469990978159,
+      "fpr95": 0.6,
+      "known_mean": 10.8380765914917,
+      "known_median": 11.383901596069336,
+      "known_min": 6.697020053863525,
+      "known_max": 13.687512397766113,
+      "unknown_mean": 12.113299369812012,
+      "unknown_median": 12.16653823852539,
+      "unknown_min": 9.343844413757324,
+      "unknown_max": 13.938873291015625,
+      "known_acceptance_at_val95": 0.98,
+      "unknown_rejection_at_val95": 0.18
+    },
+    "14": {
+      "auroc": 0.38460000000000005,
+      "auroc_ci_95": [
+        0.29100000000000004,
+        0.48000499999999996
+      ],
+      "aupr": 0.2706727811904312,
+      "fpr95": 0.94,
+      "known_mean": 5.3268303871154785,
+      "known_median": 5.579191207885742,
+      "known_min": 3.003666400909424,
+      "known_max": 6.870119571685791,
+      "unknown_mean": 4.948911190032959,
+      "unknown_median": 5.037588119506836,
+      "unknown_min": 3.06003475189209,
+      "unknown_max": 6.509385585784912,
+      "known_acceptance_at_val95": 1.0,
+      "unknown_rejection_at_val95": 0.0
+    },
+    "15": {
+      "auroc": 0.4362,
+      "auroc_ci_95": [
+        0.343585,
+        0.532005
+      ],
+      "aupr": 0.2894615668974333,
+      "fpr95": 0.9,
+      "known_mean": 4.165267467498779,
+      "known_median": 4.078398704528809,
+      "known_min": 2.703679323196411,
+      "known_max": 5.943976879119873,
+      "unknown_mean": 4.035104274749756,
+      "unknown_median": 4.097397804260254,
+      "unknown_min": 3.1433768272399902,
+      "unknown_max": 4.84494686126709,
+      "known_acceptance_at_val95": 1.0,
+      "unknown_rejection_at_val95": 0.0
+    }
+  },
+  "score_overlap": {
+    "known_test_max": 13.687512397766113,
+    "unknown_test_min": 3.06003475189209,
+    "margin": -10.627477645874023
+  },
+  "diagnostics": {
+    "coverage_score_correlation": -0.9333999608973619,
+    "softmax_score_correlation": -0.8747384242646024
+  }
+}

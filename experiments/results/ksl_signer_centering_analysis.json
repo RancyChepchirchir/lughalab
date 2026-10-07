@@ -1,0 +1,23 @@
+{
+  "method": "Per-signer mean centering; transductive diagnostic only.",
+  "raw": {
+    "auroc": 0.4855333333333334,
+    "aupr": 0.3916985885776851,
+    "known_mean": 6.776724338531494,
+    "unknown_mean": 7.0324387550354,
+    "validation_gloss_1nn": 0.145,
+    "test_gloss_1nn": 0.09666666666666666,
+    "signer_loo_1nn": 0.8903833221250841,
+    "gloss_loo_1nn": 0.800941492938803
+  },
+  "signer_centered": {
+    "auroc": 0.4919555555555556,
+    "aupr": 0.32829239925295306,
+    "known_mean": 3.8551406860351562,
+    "unknown_mean": 3.793116807937622,
+    "validation_gloss_1nn": 0.215,
+    "test_gloss_1nn": 0.21666666666666667,
+    "signer_loo_1nn": 0.831876260928043,
+    "gloss_loo_1nn": 0.8076664425016813
+  }
+}

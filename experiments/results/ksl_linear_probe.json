@@ -1,0 +1,44 @@
+{
+  "chance_accuracy": 0.05,
+  "raw": {
+    "train": {
+      "accuracy": 0.9797365754812564,
+      "balanced_accuracy": 0.9794027777777778,
+      "macro_f1": 0.9794059036461323,
+      "mean_max_probability": 0.7449904399597479
+    },
+    "validation": {
+      "accuracy": 0.22,
+      "balanced_accuracy": 0.21999999999999997,
+      "macro_f1": 0.15462904267021416,
+      "mean_max_probability": 0.7632373711262787
+    },
+    "test": {
+      "accuracy": 0.12333333333333334,
+      "balanced_accuracy": 0.12333333333333334,
+      "macro_f1": 0.08525509713246905,
+      "mean_max_probability": 0.7543721277193346
+    }
+  },
+  "signer_centered": {
+    "train": {
+      "accuracy": 0.9766970618034447,
+      "balanced_accuracy": 0.9763611111111112,
+      "macro_f1": 0.9765034132840194,
+      "mean_max_probability": 0.7711713429618057
+    },
+    "validation": {
+      "accuracy": 0.33,
+      "balanced_accuracy": 0.32999999999999996,
+      "macro_f1": 0.2713733955023043,
+      "mean_max_probability": 0.7077213823013596
+    },
+    "test": {
+      "accuracy": 0.2966666666666667,
+      "balanced_accuracy": 0.2966666666666667,
+      "macro_f1": 0.2686030061793686,
+      "mean_max_probability": 0.5661282737862844
+    }
+  },
+  "note": "Frozen 256-D KSL Transformer representation. Linear probe trained only on known-reference signers. Signer centering is a transductive diagnostic."
+}

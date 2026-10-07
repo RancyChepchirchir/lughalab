@@ -1,0 +1,66 @@
+{
+  "seed": 42,
+  "dataset": "ekitabu/kenyan-sign-language-videos",
+  "classes_total": 30,
+  "known_classes": [
+    "Agreement",
+    "Apple",
+    "Colour",
+    "Friend",
+    "Gift",
+    "Market",
+    "No_125",
+    "No_17",
+    "No_268",
+    "No_35",
+    "No_388",
+    "No_48",
+    "No_54",
+    "No_66",
+    "Picture",
+    "Proud",
+    "Sweater",
+    "Teach",
+    "Tortoise",
+    "Twin"
+  ],
+  "unknown_classes": [
+    "Monday",
+    "No_100",
+    "No_22",
+    "No_444",
+    "No_73",
+    "No_89",
+    "No_9",
+    "No_91",
+    "Tomatoes",
+    "Ugali"
+  ],
+  "train_signers": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09",
+    "10"
+  ],
+  "validation_signers": [
+    "11",
+    "12"
+  ],
+  "test_signers": [
+    "13",
+    "14",
+    "15"
+  ],
+  "counts": {
+    "known_train": 987,
+    "known_validation": 200,
+    "known_test": 300,
+    "unknown_test": 150
+  }
+}
